@@ -1,0 +1,197 @@
+@mixin sections {
+    width: 100%;
+    height: 580px;
+    background: black;
+    border-bottom: 2px solid red;
+}
+
+@mixin skew {
+    position: relative;
+    padding: 0em 5em 0em 0em;
+    overflow: hidden;
+    color: red;
+    height: 100%;
+    float: right;
+    width: 55%;
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: white;
+        transform-origin: 100% 0%;
+        transform: skew(18deg);
+        z-index: 0;
+    }
+}
+
+*{
+    margin: 0;
+}
+body{
+    background: skyblue;
+    font-family: 'Poppins', sans-serif;
+}
+.section1{
+    @include sections();
+    .socials{
+       height: 266px;
+       width: 38px; 
+       float: left;
+       border-radius: 15px;
+       margin: 150px 30px 0 70px;
+       border: 1px solid red;
+       text-align: center;
+       svg{
+        width: 20px;
+        height: 20px;
+        color: white;
+        margin-top: 16px;
+       }
+    }
+    .skew {
+        @include skew();
+        div {
+            z-index: 1;
+            position: absolute;
+            margin-left: 240px;
+            margin-top: 15px;
+            color: black;
+            a{
+                text-decoration: none;
+                font-weight: 600;
+                margin-right: 15px;
+                color: black;
+                &:hover{
+                    text-decoration: underline;
+                    text-decoration-color: red;
+                    text-decoration-thickness: 3px;
+                }
+            }
+            :nth-child(6){
+                margin: 90px 0 0px 0;
+                font-weight: 600;
+                letter-spacing: 6px;
+                font-size: 25px;
+                color: red;
+            }
+            :nth-child(7){
+                font-weight: 900;
+                font-size: 40px;
+                color: black;
+            }
+            :nth-child(8){
+                font-weight: 600;
+                font-size: 15px;
+            }
+            :nth-child(9){
+                margin: 8px 0 18px 0;
+                width: 380px;
+            }
+            button{
+                background: black /*#27AE60*/;
+                padding: 8px;
+                color: white;
+                font-size: 16px;
+                font-weight: 500;
+                text-align: center;
+                border: none;
+                border-radius: 4px;
+                &:hover{
+                    color: black;
+                    background: white;
+                    font-weight: 600;
+                    border: 1.2px solid red;
+                }
+            }
+        }
+    }
+}
+
+.section2{
+    @include sections();
+    
+    .about {
+        float: right;
+        z-index: 1;
+        color: white;
+        margin-right: 240px;
+        width: 370px;
+        p{
+            display: inherit;
+        }
+        :nth-child(1){
+            font-weight: 600;
+            letter-spacing: 5px;
+            font-size: 23px;
+            color: red;
+            padding-top: 220px;
+        }
+    }
+    .skew{
+        position: relative;
+        padding: 0em 5em 0em 0em;
+        overflow: hidden;
+        color: red;
+        height: 100%;
+        float: left;
+        width: 47%;
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: white;
+            transform-origin: 100% 0%;
+            transform: skew(-18deg);
+            z-index: 0;
+        }
+        p{
+            z-index: 1;
+            position: absolute;
+            margin-left: 240px;
+            margin-top: 15px;
+            color: black;
+        }
+    }
+}
+
+.section3{
+    @include sections();
+    text-align: center;
+    height: 800px;
+    p{
+        font-size: 30px;
+        font-weight: 700;
+        padding-top: 50px;
+        color: white;
+        margin-bottom: 30px;
+    }
+    div{
+        width: 1000px;
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 20px;
+        column-gap: 40px;
+        margin: auto;
+        div{
+            height: 305px;
+            width: 300px;
+            background: white;
+            color: black;
+            font-size: 16px;
+            border-radius: 20px;
+            transition: background 0.5s;
+            &:hover{
+                background: #FF0000;
+                color: black;
+                cursor: pointer;
+            }
+        }
+    }
+}
