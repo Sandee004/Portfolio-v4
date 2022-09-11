@@ -171,7 +171,7 @@ body{
         color: white;
         margin-bottom: 30px;
     }
-    div{
+    .boxes{
         width: 1000px;
         text-align: center;
         display: grid;
@@ -179,7 +179,7 @@ body{
         row-gap: 20px;
         column-gap: 40px;
         margin: auto;
-        div{
+        .skill{
             height: 305px;
             width: 300px;
             background: white;
@@ -187,10 +187,30 @@ body{
             font-size: 16px;
             border-radius: 20px;
             transition: background 0.5s;
+            text-align: left;
             &:hover{
                 background: #FF0000;
                 color: black;
                 cursor: pointer;
+                h4{
+                    color: white;
+                }
+                h6{
+                    color: white;
+                }
+            }
+            svg{
+                margin: 20px 20px 24px 20px;
+            }
+            h4{
+                font-weight: 700;
+                font-size: 22px;
+                margin: 0 0 10px 20px;
+            }
+            h6{
+                font-size: 16px;
+                font-weight: 400;
+                margin-left: 20px;
             }
         }
     }

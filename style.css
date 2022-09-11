@@ -172,7 +172,7 @@ body {
   color: white;
   margin-bottom: 30px;
 }
-.section3 div {
+.section3 .boxes {
   width: 1000px;
   text-align: center;
   display: grid;
@@ -182,7 +182,7 @@ body {
        column-gap: 40px;
   margin: auto;
 }
-.section3 div div {
+.section3 .boxes .skill {
   height: 305px;
   width: 300px;
   background: white;
@@ -190,9 +190,29 @@ body {
   font-size: 16px;
   border-radius: 20px;
   transition: background 0.5s;
+  text-align: left;
 }
-.section3 div div:hover {
+.section3 .boxes .skill:hover {
   background: #FF0000;
   color: black;
   cursor: pointer;
+}
+.section3 .boxes .skill:hover h4 {
+  color: white;
+}
+.section3 .boxes .skill:hover h6 {
+  color: white;
+}
+.section3 .boxes .skill svg {
+  margin: 20px 20px 24px 20px;
+}
+.section3 .boxes .skill h4 {
+  font-weight: 700;
+  font-size: 22px;
+  margin: 0 0 10px 20px;
+}
+.section3 .boxes .skill h6 {
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 20px;
 }/*# sourceMappingURL=style.css.map */
