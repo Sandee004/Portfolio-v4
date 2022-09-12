@@ -28,8 +28,8 @@
 }
 
 @mixin left-projectbox {
-    height: 220px;
-    width: 420px;
+    height: 240px;
+    width: 410px;
     border-radius: 20px;
     background: white;
     color: black;
@@ -37,15 +37,26 @@
     &:hover {
         background: red;
         color: white;
-        cursor: pointer;
     }
     p{
-        font-size: 30px;
+        font-size: 32px;
         font-weight: 700;
         margin: 0 0 5px 0;
         padding: 15px 0 0 0;
     }
-    
+    h5{
+    font-size:  15px;
+    margin: 0 15px 15px 15px;
+    }
+    h4{
+        color: red;
+        span{
+            margin-right: 5px;
+        }
+        svg{
+            vertical-align: middle;
+        }
+    }
 }
 
 @mixin right-projectbox {
@@ -58,13 +69,25 @@
     &:hover {
         background: red;
         color: white;
-        cursor: pointer;
     }
     p{
         font-size: 30px;
         font-weight: 700;
         margin: 15px 0 5px 0;
         padding: 15px 0 0 0;
+    }
+    h5{
+    font-size:  15px;
+    margin: 0 15px 15px 15px;
+    }
+    h4{
+        color: red;
+        span{
+            margin-right: 5px;
+        }
+        svg{
+            vertical-align: middle;
+        }
     }
 }
 
@@ -105,10 +128,11 @@ body{
                 font-weight: 600;
                 margin-right: 15px;
                 color: black;
+                transition: text-decoration 0.5s;
                 &:hover{
                     text-decoration: underline;
                     text-decoration-color: red;
-                    text-decoration-thickness: 3px;
+                    text-decoration-thickness: 2.3px;
                 }
             }
             :nth-child(6){
@@ -205,7 +229,7 @@ body{
 .section3{
     @include sections();
     text-align: center;
-    height: 800px;
+    height: 850px;
     p{
         font-size: 30px;
         font-weight: 700;
@@ -247,12 +271,12 @@ body{
             h4{
                 font-weight: 700;
                 font-size: 22px;
-                margin: 0 0 10px 20px;
+                margin: 0 7px 10px 20px;
             }
             h6{
                 font-size: 16px;
                 font-weight: 400;
-                margin-left: 20px;
+                margin: 0 15px 0 20px;
             }
         }
     }
@@ -273,22 +297,22 @@ body{
         float: left;
         .box1{
             @include left-projectbox();
-            margin: 80px 0 0 60px;
+            margin: 80px 0 0 70px;
         }
         .box2{
             @include left-projectbox();
-            margin: 530px 0 0 60px;
+            margin: 530px 0 0 70px;
         }
     }
     .right{
         float: right;
         .box1{
             @include right-projectbox();
-            margin: 450px 60px 0 0;
+            margin: 450px 70px 0 0;
         }
         .box2{
             @include right-projectbox();
-            margin: 510px 60px 0 0;
+            margin: 510px 70px 0 0;
         }
     }
 }

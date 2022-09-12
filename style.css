@@ -61,12 +61,15 @@ body {
   font-weight: 600;
   margin-right: 15px;
   color: black;
+  transition: -webkit-text-decoration 0.5s;
+  transition: text-decoration 0.5s;
+  transition: text-decoration 0.5s, -webkit-text-decoration 0.5s;
 }
 .section1 .skew div a:hover {
   text-decoration: underline;
   -webkit-text-decoration-color: red;
           text-decoration-color: red;
-  text-decoration-thickness: 3px;
+  text-decoration-thickness: 2.3px;
 }
 .section1 .skew div :nth-child(6) {
   margin: 90px 0 0px 0;
@@ -164,7 +167,7 @@ body {
   background: black;
   border-bottom: 2px solid red;
   text-align: center;
-  height: 800px;
+  height: 850px;
 }
 .section3 p {
   font-size: 30px;
@@ -210,12 +213,12 @@ body {
 .section3 .boxes .skill h4 {
   font-weight: 700;
   font-size: 22px;
-  margin: 0 0 10px 20px;
+  margin: 0 7px 10px 20px;
 }
 .section3 .boxes .skill h6 {
   font-size: 16px;
   font-weight: 400;
-  margin-left: 20px;
+  margin: 0 15px 0 20px;
 }
 
 .section4 {
@@ -237,44 +240,68 @@ body {
   float: left;
 }
 .section4 .left .box1 {
-  height: 220px;
-  width: 420px;
+  height: 240px;
+  width: 410px;
   border-radius: 20px;
   background: white;
   color: black;
   transition: background 0.5s;
-  margin: 80px 0 0 60px;
+  margin: 80px 0 0 70px;
 }
 .section4 .left .box1:hover {
   background: red;
   color: white;
-  cursor: pointer;
 }
 .section4 .left .box1 p {
-  font-size: 30px;
+  font-size: 32px;
   font-weight: 700;
   margin: 0 0 5px 0;
   padding: 15px 0 0 0;
 }
+.section4 .left .box1 h5 {
+  font-size: 15px;
+  margin: 0 15px 15px 15px;
+}
+.section4 .left .box1 h4 {
+  color: red;
+}
+.section4 .left .box1 h4 span {
+  margin-right: 5px;
+}
+.section4 .left .box1 h4 svg {
+  vertical-align: middle;
+}
 .section4 .left .box2 {
-  height: 220px;
-  width: 420px;
+  height: 240px;
+  width: 410px;
   border-radius: 20px;
   background: white;
   color: black;
   transition: background 0.5s;
-  margin: 530px 0 0 60px;
+  margin: 530px 0 0 70px;
 }
 .section4 .left .box2:hover {
   background: red;
   color: white;
-  cursor: pointer;
 }
 .section4 .left .box2 p {
-  font-size: 30px;
+  font-size: 32px;
   font-weight: 700;
   margin: 0 0 5px 0;
   padding: 15px 0 0 0;
+}
+.section4 .left .box2 h5 {
+  font-size: 15px;
+  margin: 0 15px 15px 15px;
+}
+.section4 .left .box2 h4 {
+  color: red;
+}
+.section4 .left .box2 h4 span {
+  margin-right: 5px;
+}
+.section4 .left .box2 h4 svg {
+  vertical-align: middle;
 }
 .section4 .right {
   float: right;
@@ -286,18 +313,30 @@ body {
   background: white;
   color: black;
   transition: background 0.5s;
-  margin: 450px 60px 0 0;
+  margin: 450px 70px 0 0;
 }
 .section4 .right .box1:hover {
   background: red;
   color: white;
-  cursor: pointer;
 }
 .section4 .right .box1 p {
   font-size: 30px;
   font-weight: 700;
   margin: 15px 0 5px 0;
   padding: 15px 0 0 0;
+}
+.section4 .right .box1 h5 {
+  font-size: 15px;
+  margin: 0 15px 15px 15px;
+}
+.section4 .right .box1 h4 {
+  color: red;
+}
+.section4 .right .box1 h4 span {
+  margin-right: 5px;
+}
+.section4 .right .box1 h4 svg {
+  vertical-align: middle;
 }
 .section4 .right .box2 {
   height: 220px;
@@ -306,18 +345,30 @@ body {
   background: white;
   color: black;
   transition: background 0.5s;
-  margin: 510px 60px 0 0;
+  margin: 510px 70px 0 0;
 }
 .section4 .right .box2:hover {
   background: red;
   color: white;
-  cursor: pointer;
 }
 .section4 .right .box2 p {
   font-size: 30px;
   font-weight: 700;
   margin: 15px 0 5px 0;
   padding: 15px 0 0 0;
+}
+.section4 .right .box2 h5 {
+  font-size: 15px;
+  margin: 0 15px 15px 15px;
+}
+.section4 .right .box2 h4 {
+  color: red;
+}
+.section4 .right .box2 h4 span {
+  margin-right: 5px;
+}
+.section4 .right .box2 h4 svg {
+  vertical-align: middle;
 }
 
 .section5 {
