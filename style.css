@@ -7,400 +7,981 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-.section1 {
-  width: 100%;
-  height: 580px;
-  background: black;
-  border-bottom: 2px solid red;
-}
-.section1 .socials {
-  height: 266px;
-  width: 38px;
-  float: left;
-  border-radius: 15px;
-  margin: 150px 30px 0 70px;
-  border: 1px solid red;
-  text-align: center;
-}
-.section1 .socials svg {
-  width: 20px;
-  height: 20px;
-  color: white;
-  margin-top: 16px;
-}
-.section1 .skew {
-  position: relative;
-  padding: 0em 5em 0em 0em;
-  overflow: hidden;
-  color: red;
-  height: 100%;
-  float: right;
-  width: 55%;
-}
-.section1 .skew::after {
-  content: "";
-  position: absolute;
-  top: 0px;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: white;
-  transform-origin: 100% 0%;
-  transform: skew(18deg);
-  z-index: 0;
-}
-.section1 .skew div {
-  z-index: 1;
-  position: absolute;
-  margin-left: 240px;
-  margin-top: 15px;
-  color: black;
-}
-.section1 .skew div a {
-  text-decoration: none;
-  font-weight: 600;
-  margin-right: 15px;
-  color: black;
-}
-.section1 .skew div a:hover {
-  text-decoration: underline;
-  -webkit-text-decoration-color: red;
-          text-decoration-color: red;
-  text-decoration-thickness: 2.3px;
-}
-.section1 .skew div :nth-child(6) {
-  margin: 90px 0 0px 0;
-  font-weight: 600;
-  letter-spacing: 6px;
-  font-size: 25px;
-  color: red;
-}
-.section1 .skew div :nth-child(7) {
-  font-weight: 900;
-  font-size: 40px;
-  color: black;
-}
-.section1 .skew div :nth-child(8) {
-  font-weight: 600;
-  font-size: 15px;
-}
-.section1 .skew div :nth-child(9) {
-  margin: 8px 0 18px 0;
-  width: 380px;
-}
-.section1 .skew div button {
-  background: black;
-  padding: 8px;
-  color: white;
-  font-size: 16px;
-  font-weight: 500;
-  text-align: center;
-  border: none;
-  border-radius: 4px;
-  transition: background 0.3s;
-}
-.section1 .skew div button:hover {
-  color: black;
-  background: white;
-  font-weight: 600;
-  border: 1.2px solid red;
-}
-
-.section2 {
-  width: 100%;
-  height: 580px;
-  background: black;
-  border-bottom: 2px solid red;
-}
-.section2 .about {
-  color: white;
-  margin-right: 8%;
-  width: 380px;
-  float: right;
-}
-.section2 .about :nth-child(1) {
-  font-weight: 600;
-  letter-spacing: 5px;
-  font-size: 25px;
-  color: red;
-  padding-top: 220px;
-}
-.section2 .about :nth-child(2) {
-  font-size: 22px;
-}
-.section2 .skew {
-  position: relative;
-  padding: 0em 5em 0em 0em;
-  overflow: hidden;
-  color: red;
-  height: 100%;
-  float: right;
-  width: 55%;
-  float: left;
-  width: 47%;
-}
-.section2 .skew::after {
-  content: "";
-  position: absolute;
-  top: 0px;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: white;
-  transform-origin: 100% 0%;
-  transform: skew(18deg);
-  z-index: 0;
-}
-.section2 .skew::after {
-  transform: skew(-18deg);
-}
-.section2 .skew div {
-  z-index: 1;
-  position: absolute;
-  margin-left: 240px;
-  margin-top: 15px;
-  color: black;
-}
-
-.section3 {
-  width: 100%;
-  height: 580px;
-  background: black;
-  border-bottom: 2px solid red;
-  text-align: center;
-  height: 850px;
-}
-.section3 p {
-  font-size: 30px;
-  font-weight: 700;
-  padding-top: 50px;
-  color: white;
-  margin-bottom: 30px;
-}
-.section3 .boxes {
-  width: 1000px;
-  text-align: center;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  row-gap: 20px;
-  -moz-column-gap: 40px;
-       column-gap: 40px;
-  margin: auto;
-}
-.section3 .boxes .skill {
-  height: 305px;
-  width: 300px;
-  background: white;
-  color: black;
-  font-size: 16px;
-  border-radius: 20px;
-  transition: background 0.5s;
-  text-align: left;
-}
-.section3 .boxes .skill:hover {
-  background: #FF0000;
-  color: black;
-  cursor: pointer;
-}
-.section3 .boxes .skill:hover h4 {
-  color: white;
-}
-.section3 .boxes .skill:hover h6 {
-  color: white;
-}
-.section3 .boxes .skill svg {
-  margin: 20px 20px 24px 20px;
-}
-.section3 .boxes .skill h4 {
-  font-weight: 700;
-  font-size: 22px;
-  margin: 0 7px 10px 20px;
-}
-.section3 .boxes .skill h6 {
-  font-size: 16px;
-  font-weight: 400;
-  margin: 0 15px 0 20px;
-}
-
-.section4 {
-  width: 100%;
-  height: 580px;
-  background: black;
-  border-bottom: 2px solid red;
-  height: 1800px;
-  text-align: center;
-  color: white;
-}
-.section4 p {
-  font-size: 30px;
-  font-weight: 700;
-  padding-top: 80px;
-  margin-bottom: 60px;
-}
-.section4 .left {
-  float: left;
-}
-.section4 .left .box1 {
-  height: 240px;
-  width: 410px;
-  border-radius: 20px;
-  background: white;
-  color: black;
-  transition: background 0.5s;
-  margin: 80px 0 0 70px;
-}
-.section4 .left .box1:hover {
-  background: red;
-  color: white;
-}
-.section4 .left .box1:hover h4 {
-  color: black;
-}
-.section4 .left .box1 p {
-  font-size: 32px;
-  font-weight: 700;
-  margin: 0 0 5px 0;
-  padding: 15px 0 0 0;
-}
-.section4 .left .box1 h5 {
-  font-size: 15px;
-  margin: 0 15px 15px 15px;
-}
-.section4 .left .box1 h4 {
-  color: red;
-}
-.section4 .left .box1 h4 span {
-  margin-right: 5px;
-}
-.section4 .left .box1 h4 svg {
-  vertical-align: middle;
-}
-.section4 .left .box2 {
-  height: 240px;
-  width: 410px;
-  border-radius: 20px;
-  background: white;
-  color: black;
-  transition: background 0.5s;
-  margin: 530px 0 0 70px;
-}
-.section4 .left .box2:hover {
-  background: red;
-  color: white;
-}
-.section4 .left .box2:hover h4 {
-  color: black;
-}
-.section4 .left .box2 p {
-  font-size: 32px;
-  font-weight: 700;
-  margin: 0 0 5px 0;
-  padding: 15px 0 0 0;
-}
-.section4 .left .box2 h5 {
-  font-size: 15px;
-  margin: 0 15px 15px 15px;
-}
-.section4 .left .box2 h4 {
-  color: red;
-}
-.section4 .left .box2 h4 span {
-  margin-right: 5px;
-}
-.section4 .left .box2 h4 svg {
-  vertical-align: middle;
-}
-.section4 .right {
-  float: right;
-}
-.section4 .right .box1 {
-  height: 220px;
-  width: 420px;
-  border-radius: 20px;
-  background: white;
-  color: black;
-  transition: background 0.5s;
-  margin: 450px 70px 0 0;
-}
-.section4 .right .box1:hover {
-  background: red;
-  color: white;
-}
-.section4 .right .box1:hover h4 {
-  color: black;
-}
-.section4 .right .box1 p {
-  font-size: 30px;
-  font-weight: 700;
-  margin: 15px 0 5px 0;
-  padding: 15px 0 0 0;
-}
-.section4 .right .box1 h5 {
-  font-size: 15px;
-  margin: 0 15px 15px 15px;
-}
-.section4 .right .box1 h4 {
-  color: red;
-}
-.section4 .right .box1 h4 span {
-  margin-right: 5px;
-}
-.section4 .right .box1 h4 svg {
-  vertical-align: middle;
-}
-.section4 .right .box2 {
-  height: 220px;
-  width: 420px;
-  border-radius: 20px;
-  background: white;
-  color: black;
-  transition: background 0.5s;
-  margin: 510px 70px 0 0;
-}
-.section4 .right .box2:hover {
-  background: red;
-  color: white;
-}
-.section4 .right .box2:hover h4 {
-  color: black;
-}
-.section4 .right .box2 p {
-  font-size: 30px;
-  font-weight: 700;
-  margin: 15px 0 5px 0;
-  padding: 15px 0 0 0;
-}
-.section4 .right .box2 h5 {
-  font-size: 15px;
-  margin: 0 15px 15px 15px;
-}
-.section4 .right .box2 h4 {
-  color: red;
-}
-.section4 .right .box2 h4 span {
-  margin-right: 5px;
-}
-.section4 .right .box2 h4 svg {
-  vertical-align: middle;
-}
-
-.section5 {
-  background: #EDEDED;
-  height: 300px;
-  text-align: center;
-}
-.section5 h2 {
-  padding: 70px 0 5px 0;
-}
-.section5 .icons {
-  padding: 20px 0;
-}
-.section5 .icons a {
-  text-decoration: none;
-  padding-right: 10px;
-}
-.section5 p a {
-  font-style: italic;
-  text-decoration: none;
-  color: black;
+@media (min-width: 100px) {
+  .section1, .section2, .section3, .section4, .section5 {
+    display: none;
+  }
+  .mobile {
+    font-family: "DM Sans", sans-serif;
+  }
+  .mobile .section6 {
+    display: block;
+    width: 100%;
+    background: black;
+    color: white;
+    border-bottom: 2px solid red;
+    height: 100vh;
+  }
+  .mobile .section6 div, .mobile .section6 p {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  .mobile .section6 div {
+    margin: 0;
+  }
+  .mobile .section6 div :nth-child(1) {
+    font-weight: 500;
+    font-size: 16px;
+    color: red;
+    padding-top: 80px;
+    margin-bottom: 8px;
+  }
+  .mobile .section6 div :nth-child(2) {
+    font-size: 32px;
+    font-weight: 650;
+    margin-bottom: 8px;
+  }
+  .mobile .section6 div :nth-child(3) {
+    font-weight: 500;
+    font-size: 23px;
+    margin-bottom: 8px;
+  }
+  .mobile .section6 div :nth-child(4) {
+    font-size: 18px;
+  }
+  .mobile .section6 div .resume {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    border: 2px solid red;
+    padding: 8px;
+    border-radius: 4px;
+    font-weight: 18px;
+    margin: 0 25px;
+  }
+  .mobile .section6 div .resume:hover {
+    background: red;
+    color: white;
+  }
+  .mobile .section7 {
+    display: block;
+    width: 100%;
+    background: black;
+    color: white;
+    border-bottom: 2px solid red;
+    background: whitesmoke;
+    color: black;
+    height: 100vh;
+  }
+  .mobile .section7 div, .mobile .section7 p {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  .mobile .section7 :nth-child(1) {
+    font-weight: 600;
+    letter-spacing: 3px;
+    font-size: 30px;
+    padding-top: 30px;
+    margin-bottom: 13px;
+  }
+  .mobile .section7 :nth-child(1) span {
+    color: red;
+  }
+  .mobile .section7 :nth-child(2), .mobile .section7 :nth-child(3) {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .mobile .section7 :nth-child(4) {
+    margin-top: 10px;
+  }
+  .mobile .section8 {
+    display: block;
+    width: 100%;
+    background: black;
+    color: white;
+    border-bottom: 2px solid red;
+    height: cover;
+  }
+  .mobile .section8 div, .mobile .section8 p {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  .mobile .section8 :nth-child(1) {
+    font-weight: 600;
+    letter-spacing: 3px;
+    font-size: 30px;
+    padding-top: 30px;
+    margin-bottom: 10px;
+  }
+  .mobile .section8 :nth-child(1) span {
+    color: red;
+  }
+  .mobile .section8 div {
+    margin-bottom: 10px;
+  }
+  .mobile .section8 div p {
+    margin: 0;
+    font-size: 17px;
+  }
+  .mobile .section8 div :nth-child(2) {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .mobile .section9 {
+    display: block;
+    width: 100%;
+    background: black;
+    color: white;
+    border-bottom: 2px solid red;
+    height: 100vh;
+    color: black;
+    background: ghostwhite;
+  }
+  .mobile .section9 div, .mobile .section9 p {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  .mobile .section9 :nth-child(1) {
+    font-weight: 600;
+    letter-spacing: 3px;
+    font-size: 30px;
+    padding-top: 30px;
+    margin-bottom: 10px;
+  }
+  .mobile .section9 :nth-child(1) span {
+    color: red;
+  }
+  .mobile .section10 {
+    display: block;
+    width: 100%;
+    background: black;
+    color: white;
+    border-bottom: 2px solid red;
+    height: 30vh;
+    text-align: center;
+  }
+  .mobile .section10 div, .mobile .section10 p {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  .mobile .section10 h2 {
+    padding: 30px 0 5px 0;
+  }
+  .mobile .section10 .icon {
+    margin: 20px 0 20px 0;
+  }
+  .mobile .section10 .icon svg {
+    margin-right: 10px;
+  }
+  .mobile .section10 p a {
+    font-style: italic;
+    text-decoration: none;
+    color: white;
+  }
+}
+/*Tablet View*/
+@media (min-width: 1090px) {
+  .mobile {
+    display: none;
+  }
+  .section1 {
+    display: block;
+    width: 100%;
+    height: 580px;
+    background: black;
+    border-bottom: 2px solid red;
+  }
+  .section1 .socials {
+    display: block;
+    height: 266px;
+    width: 38px;
+    float: left;
+    border-radius: 15px;
+    margin: 150px 30px 0 70px;
+    border: 1px solid red;
+    text-align: center;
+  }
+  .section1 .socials svg {
+    width: 20px;
+    height: 20px;
+    color: white;
+    margin-top: 16px;
+  }
+  .section1 .skew {
+    position: relative;
+    padding: 0em 5em 0em 0em;
+    overflow: hidden;
+    color: red;
+    height: 100%;
+    float: right;
+    width: 55%;
+  }
+  .section1 .skew::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    transform-origin: 100% 0%;
+    transform: skew(18deg);
+    z-index: 0;
+  }
+  .section1 .skew div {
+    z-index: 1;
+    position: absolute;
+    margin-left: 240px;
+    margin-top: 15px;
+    color: black;
+  }
+  .section1 .skew div a {
+    text-decoration: none;
+    font-weight: 600;
+    margin-right: 15px;
+    color: black;
+  }
+  .section1 .skew div a:hover {
+    text-decoration: underline;
+    -webkit-text-decoration-color: red;
+            text-decoration-color: red;
+    text-decoration-thickness: 2.3px;
+  }
+  .section1 .skew div :nth-child(6) {
+    margin: 90px 0 0px 0;
+    font-weight: 600;
+    letter-spacing: 6px;
+    font-size: 25px;
+    color: red;
+  }
+  .section1 .skew div :nth-child(7) {
+    font-weight: 900;
+    font-size: 40px;
+    color: black;
+  }
+  .section1 .skew div :nth-child(8) {
+    font-weight: 600;
+    font-size: 15px;
+  }
+  .section1 .skew div :nth-child(9) {
+    margin: 8px 0 18px 0;
+    width: 380px;
+  }
+  .section1 .skew div button {
+    background: black;
+    padding: 8px;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    transition: background 0.3s;
+  }
+  .section1 .skew div button:hover {
+    color: black;
+    background: white;
+    font-weight: 600;
+    border: 1.2px solid red;
+  }
+  .section2 {
+    display: block;
+    width: 100%;
+    height: 580px;
+    background: black;
+    border-bottom: 2px solid red;
+  }
+  .section2 .about {
+    color: white;
+    margin-right: 8%;
+    width: 380px;
+    float: right;
+  }
+  .section2 .about :nth-child(1) {
+    font-weight: 600;
+    letter-spacing: 5px;
+    font-size: 25px;
+    color: red;
+    padding-top: 220px;
+  }
+  .section2 .about :nth-child(2) {
+    font-size: 22px;
+  }
+  .section2 .skew {
+    position: relative;
+    padding: 0em 5em 0em 0em;
+    overflow: hidden;
+    color: red;
+    height: 100%;
+    float: right;
+    width: 55%;
+    float: left;
+    width: 47%;
+  }
+  .section2 .skew::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    transform-origin: 100% 0%;
+    transform: skew(18deg);
+    z-index: 0;
+  }
+  .section2 .skew::after {
+    transform: skew(-18deg);
+  }
+  .section2 .skew div {
+    z-index: 1;
+    position: absolute;
+    margin-left: 240px;
+    margin-top: 15px;
+    color: black;
+  }
+  .section3 {
+    display: block;
+    width: 100%;
+    height: 580px;
+    background: black;
+    border-bottom: 2px solid red;
+    text-align: center;
+    height: 850px;
+  }
+  .section3 p {
+    font-size: 30px;
+    font-weight: 700;
+    padding-top: 50px;
+    color: white;
+    margin-bottom: 30px;
+  }
+  .section3 .boxes {
+    width: 1000px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    -moz-column-gap: 40px;
+         column-gap: 40px;
+    margin: auto;
+  }
+  .section3 .boxes .skill {
+    height: 305px;
+    width: 300px;
+    background: white;
+    color: black;
+    font-size: 16px;
+    border-radius: 20px;
+    transition: background 0.5s;
+    text-align: left;
+  }
+  .section3 .boxes .skill:hover {
+    background: #FF0000;
+    color: black;
+    cursor: pointer;
+  }
+  .section3 .boxes .skill:hover h4 {
+    color: white;
+  }
+  .section3 .boxes .skill:hover h6 {
+    color: white;
+  }
+  .section3 .boxes .skill svg {
+    margin: 20px 20px 24px 20px;
+  }
+  .section3 .boxes .skill h4 {
+    font-weight: 700;
+    font-size: 22px;
+    margin: 0 7px 10px 20px;
+  }
+  .section3 .boxes .skill h6 {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0 15px 0 20px;
+  }
+  .section4 {
+    display: block;
+    width: 100%;
+    height: 580px;
+    background: black;
+    border-bottom: 2px solid red;
+    height: 1500px;
+    text-align: center;
+    color: white;
+  }
+  .section4 p {
+    font-size: 30px;
+    font-weight: 700;
+    padding-top: 80px;
+    margin-bottom: 60px;
+  }
+  .section4 .left .box1 {
+    height: 260px;
+    width: 450px;
+    border-radius: 20px;
+    background: white;
+    color: black;
+    transition: background 0.5s;
+    margin: 80px auto 0 auto;
+  }
+  .section4 .left .box1:hover {
+    background: red;
+    color: white;
+  }
+  .section4 .left .box1:hover h4 {
+    color: black;
+  }
+  .section4 .left .box1 p {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0 0 5px 0;
+    padding: 15px 0 0 0;
+  }
+  .section4 .left .box1 h5 {
+    font-size: 15px;
+    margin: 0 15px 15px 15px;
+  }
+  .section4 .left .box1 h4 {
+    color: red;
+  }
+  .section4 .left .box1 h4 span {
+    margin-right: 5px;
+  }
+  .section4 .left .box1 h4 svg {
+    vertical-align: middle;
+  }
+  .section4 .left .box2 {
+    height: 260px;
+    width: 450px;
+    border-radius: 20px;
+    background: white;
+    color: black;
+    transition: background 0.5s;
+    margin: 50px auto 0 auto;
+  }
+  .section4 .left .box2:hover {
+    background: red;
+    color: white;
+  }
+  .section4 .left .box2:hover h4 {
+    color: black;
+  }
+  .section4 .left .box2 p {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0 0 5px 0;
+    padding: 15px 0 0 0;
+  }
+  .section4 .left .box2 h5 {
+    font-size: 15px;
+    margin: 0 15px 15px 15px;
+  }
+  .section4 .left .box2 h4 {
+    color: red;
+  }
+  .section4 .left .box2 h4 span {
+    margin-right: 5px;
+  }
+  .section4 .left .box2 h4 svg {
+    vertical-align: middle;
+  }
+  .section4 .right .box1 {
+    height: 220px;
+    width: 420px;
+    border-radius: 20px;
+    background: white;
+    color: black;
+    transition: background 0.5s;
+    margin: 50px auto 0 auto;
+  }
+  .section4 .right .box1:hover {
+    background: red;
+    color: white;
+  }
+  .section4 .right .box1:hover h4 {
+    color: black;
+  }
+  .section4 .right .box1 p {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 15px 0 5px 0;
+    padding: 15px 0 0 0;
+  }
+  .section4 .right .box1 h5 {
+    font-size: 15px;
+    margin: 0 15px 15px 15px;
+  }
+  .section4 .right .box1 h4 {
+    color: red;
+  }
+  .section4 .right .box1 h4 span {
+    margin-right: 5px;
+  }
+  .section4 .right .box1 h4 svg {
+    vertical-align: middle;
+  }
+  .section4 .right .box2 {
+    height: 220px;
+    width: 420px;
+    border-radius: 20px;
+    background: white;
+    color: black;
+    transition: background 0.5s;
+    margin: 50px auto 0 auto;
+  }
+  .section4 .right .box2:hover {
+    background: red;
+    color: white;
+  }
+  .section4 .right .box2:hover h4 {
+    color: black;
+  }
+  .section4 .right .box2 p {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 15px 0 5px 0;
+    padding: 15px 0 0 0;
+  }
+  .section4 .right .box2 h5 {
+    font-size: 15px;
+    margin: 0 15px 15px 15px;
+  }
+  .section4 .right .box2 h4 {
+    color: red;
+  }
+  .section4 .right .box2 h4 span {
+    margin-right: 5px;
+  }
+  .section4 .right .box2 h4 svg {
+    vertical-align: middle;
+  }
+  .section4 .mid-svg {
+    display: none;
+  }
+  .section5 {
+    display: block;
+    background: #EDEDED;
+    height: 300px;
+    text-align: center;
+  }
+  .section5 h2 {
+    padding: 70px 0 5px 0;
+  }
+  .section5 .icons {
+    padding: 20px 0;
+  }
+  .section5 .icons a {
+    text-decoration: none;
+    padding-right: 10px;
+  }
+  .section5 p a {
+    font-style: italic;
+    text-decoration: none;
+    color: black;
+  }
+}
+/*Laptop View*/
+@media (min-width: 1150px) {
+  .mobile {
+    display: none;
+  }
+  .section1 {
+    width: 100%;
+    height: 580px;
+    background: black;
+    border-bottom: 2px solid red;
+  }
+  .section1 .socials {
+    display: block;
+    height: 266px;
+    width: 38px;
+    float: left;
+    border-radius: 15px;
+    margin: 150px 30px 0 70px;
+    border: 1px solid red;
+    text-align: center;
+  }
+  .section1 .socials svg {
+    width: 20px;
+    height: 20px;
+    color: white;
+    margin-top: 16px;
+  }
+  .section1 .skew {
+    position: relative;
+    padding: 0em 5em 0em 0em;
+    overflow: hidden;
+    color: red;
+    height: 100%;
+    float: right;
+    width: 55%;
+  }
+  .section1 .skew::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    transform-origin: 100% 0%;
+    transform: skew(18deg);
+    z-index: 0;
+  }
+  .section1 .skew div {
+    z-index: 1;
+    position: absolute;
+    margin-left: 240px;
+    margin-top: 15px;
+    color: black;
+  }
+  .section1 .skew div a {
+    text-decoration: none;
+    font-weight: 600;
+    margin-right: 15px;
+    color: black;
+  }
+  .section1 .skew div a:hover {
+    text-decoration: underline;
+    -webkit-text-decoration-color: red;
+            text-decoration-color: red;
+    text-decoration-thickness: 2.3px;
+  }
+  .section1 .skew div :nth-child(6) {
+    margin: 90px 0 0px 0;
+    font-weight: 600;
+    letter-spacing: 6px;
+    font-size: 25px;
+    color: red;
+  }
+  .section1 .skew div :nth-child(7) {
+    font-weight: 900;
+    font-size: 40px;
+    color: black;
+  }
+  .section1 .skew div :nth-child(8) {
+    font-weight: 600;
+    font-size: 15px;
+  }
+  .section1 .skew div :nth-child(9) {
+    margin: 8px 0 18px 0;
+    width: 380px;
+  }
+  .section1 .skew div button {
+    background: black;
+    padding: 8px;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    transition: background 0.3s;
+  }
+  .section1 .skew div button:hover {
+    color: black;
+    background: white;
+    font-weight: 600;
+    border: 1.2px solid red;
+  }
+  .section2 {
+    width: 100%;
+    height: 580px;
+    background: black;
+    border-bottom: 2px solid red;
+  }
+  .section2 .about {
+    color: white;
+    margin-right: 8%;
+    width: 380px;
+    float: right;
+  }
+  .section2 .about :nth-child(1) {
+    font-weight: 600;
+    letter-spacing: 5px;
+    font-size: 25px;
+    color: red;
+    padding-top: 220px;
+  }
+  .section2 .about :nth-child(2) {
+    font-size: 22px;
+  }
+  .section2 .skew {
+    position: relative;
+    padding: 0em 5em 0em 0em;
+    overflow: hidden;
+    color: red;
+    height: 100%;
+    float: right;
+    width: 55%;
+    float: left;
+    width: 47%;
+  }
+  .section2 .skew::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    transform-origin: 100% 0%;
+    transform: skew(18deg);
+    z-index: 0;
+  }
+  .section2 .skew::after {
+    transform: skew(-18deg);
+  }
+  .section2 .skew div {
+    z-index: 1;
+    position: absolute;
+    margin-left: 240px;
+    margin-top: 15px;
+    color: black;
+  }
+  .section3 {
+    width: 100%;
+    height: 580px;
+    background: black;
+    border-bottom: 2px solid red;
+    text-align: center;
+    height: 850px;
+  }
+  .section3 p {
+    font-size: 30px;
+    font-weight: 700;
+    padding-top: 50px;
+    color: white;
+    margin-bottom: 30px;
+  }
+  .section3 .boxes {
+    width: 1000px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    -moz-column-gap: 40px;
+         column-gap: 40px;
+    margin: auto;
+  }
+  .section3 .boxes .skill {
+    height: 305px;
+    width: 300px;
+    background: white;
+    color: black;
+    font-size: 16px;
+    border-radius: 20px;
+    transition: background 0.5s;
+    text-align: left;
+  }
+  .section3 .boxes .skill:hover {
+    background: #FF0000;
+    color: black;
+    cursor: pointer;
+  }
+  .section3 .boxes .skill:hover h4 {
+    color: white;
+  }
+  .section3 .boxes .skill:hover h6 {
+    color: white;
+  }
+  .section3 .boxes .skill svg {
+    margin: 20px 20px 24px 20px;
+  }
+  .section3 .boxes .skill h4 {
+    font-weight: 700;
+    font-size: 22px;
+    margin: 0 7px 10px 20px;
+  }
+  .section3 .boxes .skill h6 {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0 15px 0 20px;
+  }
+  .section4 {
+    width: 100%;
+    height: 580px;
+    background: black;
+    border-bottom: 2px solid red;
+    height: 1800px;
+    text-align: center;
+    color: white;
+  }
+  .section4 p {
+    font-size: 30px;
+    font-weight: 700;
+    padding-top: 80px;
+    margin-bottom: 60px;
+  }
+  .section4 .left {
+    float: left;
+  }
+  .section4 .left .box1 {
+    height: 240px;
+    width: 410px;
+    border-radius: 20px;
+    background: white;
+    color: black;
+    transition: background 0.5s;
+    margin: 80px 0 0 70px;
+  }
+  .section4 .left .box1:hover {
+    background: red;
+    color: white;
+  }
+  .section4 .left .box1:hover h4 {
+    color: black;
+  }
+  .section4 .left .box1 p {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0 0 5px 0;
+    padding: 15px 0 0 0;
+  }
+  .section4 .left .box1 h5 {
+    font-size: 15px;
+    margin: 0 15px 15px 15px;
+  }
+  .section4 .left .box1 h4 {
+    color: red;
+  }
+  .section4 .left .box1 h4 span {
+    margin-right: 5px;
+  }
+  .section4 .left .box1 h4 svg {
+    vertical-align: middle;
+  }
+  .section4 .left .box2 {
+    height: 240px;
+    width: 410px;
+    border-radius: 20px;
+    background: white;
+    color: black;
+    transition: background 0.5s;
+    margin: 530px 0 0 70px;
+  }
+  .section4 .left .box2:hover {
+    background: red;
+    color: white;
+  }
+  .section4 .left .box2:hover h4 {
+    color: black;
+  }
+  .section4 .left .box2 p {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0 0 5px 0;
+    padding: 15px 0 0 0;
+  }
+  .section4 .left .box2 h5 {
+    font-size: 15px;
+    margin: 0 15px 15px 15px;
+  }
+  .section4 .left .box2 h4 {
+    color: red;
+  }
+  .section4 .left .box2 h4 span {
+    margin-right: 5px;
+  }
+  .section4 .left .box2 h4 svg {
+    vertical-align: middle;
+  }
+  .section4 .right {
+    float: right;
+  }
+  .section4 .right .box1 {
+    height: 220px;
+    width: 420px;
+    border-radius: 20px;
+    background: white;
+    color: black;
+    transition: background 0.5s;
+    margin: 450px 70px 0 0;
+  }
+  .section4 .right .box1:hover {
+    background: red;
+    color: white;
+  }
+  .section4 .right .box1:hover h4 {
+    color: black;
+  }
+  .section4 .right .box1 p {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 15px 0 5px 0;
+    padding: 15px 0 0 0;
+  }
+  .section4 .right .box1 h5 {
+    font-size: 15px;
+    margin: 0 15px 15px 15px;
+  }
+  .section4 .right .box1 h4 {
+    color: red;
+  }
+  .section4 .right .box1 h4 span {
+    margin-right: 5px;
+  }
+  .section4 .right .box1 h4 svg {
+    vertical-align: middle;
+  }
+  .section4 .right .box2 {
+    height: 220px;
+    width: 420px;
+    border-radius: 20px;
+    background: white;
+    color: black;
+    transition: background 0.5s;
+    margin: 510px 70px 0 0;
+  }
+  .section4 .right .box2:hover {
+    background: red;
+    color: white;
+  }
+  .section4 .right .box2:hover h4 {
+    color: black;
+  }
+  .section4 .right .box2 p {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 15px 0 5px 0;
+    padding: 15px 0 0 0;
+  }
+  .section4 .right .box2 h5 {
+    font-size: 15px;
+    margin: 0 15px 15px 15px;
+  }
+  .section4 .right .box2 h4 {
+    color: red;
+  }
+  .section4 .right .box2 h4 span {
+    margin-right: 5px;
+  }
+  .section4 .right .box2 h4 svg {
+    vertical-align: middle;
+  }
+  .section4 .mid-svg {
+    display: inline-block;
+  }
+  .section5 {
+    display: block;
+    background: #EDEDED;
+    height: 300px;
+    text-align: center;
+  }
+  .section5 h2 {
+    padding: 70px 0 5px 0;
+  }
+  .section5 .icons {
+    padding: 20px 0;
+  }
+  .section5 .icons a {
+    text-decoration: none;
+    padding-right: 10px;
+  }
+  .section5 p a {
+    font-style: italic;
+    text-decoration: none;
+    color: black;
+  }
 }/*# sourceMappingURL=style.css.map */

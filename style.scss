@@ -1,388 +1,938 @@
 * {
     margin: 0;
 }
+
 body {
     background: skyblue;
     font-family: 'Poppins', sans-serif;
 }
-
-@mixin sections {
-    width: 100%;
-    height: 580px;
-    background: black;
-    border-bottom: 2px solid red;
-}
-
-@mixin skew {
-    position: relative;
-    padding: 0em 5em 0em 0em;
-    overflow: hidden;
-    color: red;
-    height: 100%;
-    float: right;
-    width: 55%;
-
-    &::after {
-        content: '';
-        position: absolute;
-        top: 0px;
-        left: 0;
+@media (min-width: 100px) {
+    .section1, .section2, .section3, .section4, .section5{
+        display: none;
+    }
+    @mixin sections {
+        display: block;
         width: 100%;
-        height: 100%;
-        background: white;
-        transform-origin: 100% 0%;
-        transform: skew(18deg);
-        z-index: 0;
-    }
-}
-
-@mixin left-projectbox {
-    height: 240px;
-    width: 410px;
-    border-radius: 20px;
-    background: white;
-    color: black;
-    transition: background 0.5s;
-
-    &:hover {
-        background: red;
+        background: black;
         color: white;
-
-        h4 {
-            color: black;
+        border-bottom: 2px solid red;
+        div, p{
+            margin-left: 25px;
+            margin-right: 25px;
         }
     }
-
-    p {
-        font-size: 32px;
-        font-weight: 700;
-        margin: 0 0 5px 0;
-        padding: 15px 0 0 0;
-    }
-
-    h5 {
-        font-size: 15px;
-        margin: 0 15px 15px 15px;
-    }
-
-    h4 {
-        color: red;
-
-        span {
-            margin-right: 5px;
-        }
-
-        svg {
-            vertical-align: middle;
-        }
-    }
-}
-
-@mixin right-projectbox {
-    height: 220px;
-    width: 420px;
-    border-radius: 20px;
-    background: white;
-    color: black;
-    transition: background 0.5s;
-
-    &:hover {
-        background: red;
-        color: white;
-
-        h4 {
-            color: black;
-        }
-    }
-
-    p {
-        font-size: 30px;
-        font-weight: 700;
-        margin: 15px 0 5px 0;
-        padding: 15px 0 0 0;
-    }
-
-    h5 {
-        font-size: 15px;
-        margin: 0 15px 15px 15px;
-    }
-
-    h4 {
-        color: red;
-
-        span {
-            margin-right: 5px;
-        }
-
-        svg {
-            vertical-align: middle;
-        }
-    }
-}
-
-.section1 {
-    @include sections();
-
-    .socials {
-        height: 266px;
-        width: 38px;
-        float: left;
-        border-radius: 15px;
-        margin: 150px 30px 0 70px;
-        border: 1px solid red;
-        text-align: center;
-
-        svg {
-            width: 20px;
-            height: 20px;
-            color: white;
-            margin-top: 16px;
-        }
-    }
-
-    .skew {
-        @include skew();
-
-        div {
-            z-index: 1;
-            position: absolute;
-            margin-left: 240px;
-            margin-top: 15px;
-            color: black;
-
-            a {
-                text-decoration: none;
-                font-weight: 600;
-                margin-right: 15px;
-                color: black;
-
-                &:hover {
-                    text-decoration: underline;
-                    text-decoration-color: red;
-                    text-decoration-thickness: 2.3px;
+    .mobile{
+        font-family: "DM Sans", sans-serif;
+        .section6{
+            @include sections();
+            height: 100vh;
+            div{
+                margin: 0;
+                :nth-child(1){
+                    font-weight: 500;
+                    font-size: 16px;
+                    color: red;
+                    padding-top: 80px;
+                    margin-bottom: 8px;
+                }
+                :nth-child(2){
+                    font-size: 32px;
+                    font-weight: 650;
+                    margin-bottom: 8px;
+                }
+                :nth-child(3){
+                    font-weight: 500;
+                    font-size: 23px;
+                    margin-bottom: 8px;
+                }
+                :nth-child(4) {
+                    font-size: 18px;
+                }
+                .resume{
+                    text-decoration: none;
+                    color: white;
+                    font-weight: 500;
+                    border: 2px solid red;
+                    padding: 8px;
+                    border-radius: 4px;
+                    font-weight: 18px;
+                    margin: 0 25px;
+                    &:hover{
+                        background: red;
+                        color: white;
+                    }
                 }
             }
+        }
 
-            :nth-child(6) {
-                margin: 90px 0 0px 0;
+        .section7{
+            @include sections();
+            background: whitesmoke;
+            color: black;
+            height: 100vh;
+            :nth-child(1){
+                span{
+                    color: red;
+                }
                 font-weight: 600;
-                letter-spacing: 6px;
-                font-size: 25px;
-                color: red;
+                letter-spacing: 3px;
+                font-size: 30px;
+                padding-top: 30px;
+                margin-bottom: 13px;
             }
-
-            :nth-child(7) {
-                font-weight: 900;
-                font-size: 40px;
-                color: black;
+            :nth-child(2), :nth-child(3) {
+                font-size: 18px;
+                line-height: 28px;
             }
+            :nth-child(4) {
+                margin-top: 10px;
+            }
+        }
 
-            :nth-child(8) {
+        .section8{
+            @include sections();
+            height: cover;
+            :nth-child(1){
+                span{
+                    color: red;
+                }
                 font-weight: 600;
-                font-size: 15px;
+                letter-spacing: 3px;
+                font-size: 30px;
+                padding-top: 30px;
+                margin-bottom: 10px;
             }
-
-            :nth-child(9) {
-                margin: 8px 0 18px 0;
-                width: 380px;
-            }
-
-            button {
-                background: black
-                    /*#27AE60*/
-                ;
-                padding: 8px;
-                color: white;
-                font-size: 16px;
-                font-weight: 500;
-                text-align: center;
-                border: none;
-                border-radius: 4px;
-                transition: background 0.3s;
-
-                &:hover {
-                    color: black;
-                    background: white;
+            div{
+                margin-bottom: 10px;
+                p{
+                    margin: 0;
+                    font-size: 17px;
+                }
+                :nth-child(2){
+                    font-size: 20px;
                     font-weight: 600;
-                    border: 1.2px solid red;
+                }
+            }
+        }
+
+        .section9{
+            @include sections();
+            height: 100vh;
+            color: black;
+            background: ghostwhite;
+            :nth-child(1){
+                span{
+                    color: red;
+                }
+                font-weight: 600;
+                letter-spacing: 3px;
+                font-size: 30px;
+                padding-top: 30px;
+                margin-bottom: 10px;
+            }
+        }
+        .section10{
+            @include sections();
+            height: 30vh;
+            text-align: center;
+            h2 {
+                padding: 30px 0 5px 0;
+            }
+            .icon{
+                margin: 20px 0 20px 0;
+                svg{
+                    margin-right: 10px;
+                }
+            }
+            p {
+                a {
+                    font-style: italic;
+                    text-decoration: none;
+                    color: white;
                 }
             }
         }
     }
 }
 
-.section2 {
-    @include sections();
 
-    .about {
-        color: white;
-        margin-right: 8%;
-        width: 380px;
-        float: right;
-
-        :nth-child(1) {
-            font-weight: 600;
-            letter-spacing: 5px;
-            font-size: 25px;
-            color: red;
-            padding-top: 220px;
-        }
-
-        :nth-child(2) {
-            font-size: 22px;
-        }
+/*Tablet View*/
+@media (min-width: 1090px) {
+    .mobile{
+        display: none;
+    }
+    @mixin sections {
+        display: block;
+        width: 100%;
+        height: 580px;
+        background: black;
+        border-bottom: 2px solid red;
     }
 
-    .skew {
-        @include skew();
-        float: left;
-        width: 47%;
+    @mixin skew {
+        position: relative;
+        padding: 0em 5em 0em 0em;
+        overflow: hidden;
+        color: red;
+        height: 100%;
+        float: right;
+        width: 55%;
 
         &::after {
-            transform: skew(-18deg);
-        }
-
-        div {
-            z-index: 1;
+            content: '';
             position: absolute;
-            margin-left: 240px;
-            margin-top: 15px;
-            color: black;
+            top: 0px;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: white;
+            transform-origin: 100% 0%;
+            transform: skew(18deg);
+            z-index: 0;
         }
     }
-}
 
-.section3 {
-    @include sections();
-    text-align: center;
-    height: 850px;
+    @mixin left-projectbox {
+        height: 260px;
+        width: 450px;
+        border-radius: 20px;
+        background: white;
+        color: black;
+        transition: background 0.5s;
 
-    p {
-        font-size: 30px;
-        font-weight: 700;
-        padding-top: 50px;
-        color: white;
-        margin-bottom: 30px;
-    }
+        &:hover {
+            background: red;
+            color: white;
 
-    .boxes {
-        width: 1000px;
-        text-align: center;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        row-gap: 20px;
-        column-gap: 40px;
-        margin: auto;
-
-        .skill {
-            height: 305px;
-            width: 300px;
-            background: white;
-            color: black;
-            font-size: 16px;
-            border-radius: 20px;
-            transition: background 0.5s;
-            text-align: left;
-
-            &:hover {
-                background: #FF0000;
+            h4 {
                 color: black;
-                cursor: pointer;
+            }
+        }
 
-                h4 {
-                    color: white;
-                }
+        p {
+            font-size: 32px;
+            font-weight: 700;
+            margin: 0 0 5px 0;
+            padding: 15px 0 0 0;
+        }
 
-                h6 {
-                    color: white;
-                }
+        h5 {
+            font-size: 15px;
+            margin: 0 15px 15px 15px;
+        }
+
+        h4 {
+            color: red;
+
+            span {
+                margin-right: 5px;
             }
 
             svg {
-                margin: 20px 20px 24px 20px;
+                vertical-align: middle;
             }
+        }
+    }
+
+    @mixin right-projectbox {
+        height: 220px;
+        width: 420px;
+        border-radius: 20px;
+        background: white;
+        color: black;
+        transition: background 0.5s;
+
+        &:hover {
+            background: red;
+            color: white;
 
             h4 {
-                font-weight: 700;
+                color: black;
+            }
+        }
+
+        p {
+            font-size: 30px;
+            font-weight: 700;
+            margin: 15px 0 5px 0;
+            padding: 15px 0 0 0;
+        }
+
+        h5 {
+            font-size: 15px;
+            margin: 0 15px 15px 15px;
+        }
+
+        h4 {
+            color: red;
+
+            span {
+                margin-right: 5px;
+            }
+
+            svg {
+                vertical-align: middle;
+            }
+        }
+    }
+
+    .section1 {
+        @include sections();
+
+        .socials {
+
+            display: block;
+            height: 266px;
+            width: 38px;
+            float: left;
+            border-radius: 15px;
+            margin: 150px 30px 0 70px;
+            border: 1px solid red;
+            text-align: center;
+
+            svg {
+                width: 20px;
+                height: 20px;
+                color: white;
+                margin-top: 16px;
+            }
+        }
+
+        .skew {
+            @include skew();
+
+            div {
+                z-index: 1;
+                position: absolute;
+                margin-left: 240px;
+                margin-top: 15px;
+                color: black;
+
+                a {
+                    text-decoration: none;
+                    font-weight: 600;
+                    margin-right: 15px;
+                    color: black;
+
+                    &:hover {
+                        text-decoration: underline;
+                        text-decoration-color: red;
+                        text-decoration-thickness: 2.3px;
+                    }
+                }
+
+                :nth-child(6) {
+                    margin: 90px 0 0px 0;
+                    font-weight: 600;
+                    letter-spacing: 6px;
+                    font-size: 25px;
+                    color: red;
+                }
+
+                :nth-child(7) {
+                    font-weight: 900;
+                    font-size: 40px;
+                    color: black;
+                }
+
+                :nth-child(8) {
+                    font-weight: 600;
+                    font-size: 15px;
+                }
+
+                :nth-child(9) {
+                    margin: 8px 0 18px 0;
+                    width: 380px;
+                }
+
+                button {
+                    background: black;
+                    padding: 8px;
+                    color: white;
+                    font-size: 16px;
+                    font-weight: 500;
+                    text-align: center;
+                    border: none;
+                    border-radius: 4px;
+                    transition: background 0.3s;
+
+                    &:hover {
+                        color: black;
+                        background: white;
+                        font-weight: 600;
+                        border: 1.2px solid red;
+                    }
+                }
+            }
+        }
+    }
+
+    .section2 {
+        @include sections();
+
+        .about {
+            color: white;
+            margin-right: 8%;
+            width: 380px;
+            float: right;
+
+            :nth-child(1) {
+                font-weight: 600;
+                letter-spacing: 5px;
+                font-size: 25px;
+                color: red;
+                padding-top: 220px;
+            }
+
+            :nth-child(2) {
                 font-size: 22px;
-                margin: 0 7px 10px 20px;
+            }
+        }
+
+        .skew {
+            @include skew();
+            float: left;
+            width: 47%;
+
+            &::after {
+                transform: skew(-18deg);
             }
 
-            h6 {
+            div {
+                z-index: 1;
+                position: absolute;
+                margin-left: 240px;
+                margin-top: 15px;
+                color: black;
+            }
+        }
+    }
+
+    .section3 {
+        @include sections();
+        text-align: center;
+        height: 850px;
+
+        p {
+            font-size: 30px;
+            font-weight: 700;
+            padding-top: 50px;
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        .boxes {
+            width: 1000px;
+            text-align: center;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            row-gap: 20px;
+            column-gap: 40px;
+            margin: auto;
+
+            .skill {
+                height: 305px;
+                width: 300px;
+                background: white;
+                color: black;
                 font-size: 16px;
-                font-weight: 400;
-                margin: 0 15px 0 20px;
+                border-radius: 20px;
+                transition: background 0.5s;
+                text-align: left;
+
+                &:hover {
+                    background: #FF0000;
+                    color: black;
+                    cursor: pointer;
+
+                    h4 {
+                        color: white;
+                    }
+
+                    h6 {
+                        color: white;
+                    }
+                }
+
+                svg {
+                    margin: 20px 20px 24px 20px;
+                }
+
+                h4 {
+                    font-weight: 700;
+                    font-size: 22px;
+                    margin: 0 7px 10px 20px;
+                }
+
+                h6 {
+                    font-size: 16px;
+                    font-weight: 400;
+                    margin: 0 15px 0 20px;
+                }
             }
         }
     }
+
+    .section4 {
+        @include sections();
+        height: 1500px;
+        text-align: center;
+        color: white;
+
+        p {
+            font-size: 30px;
+            font-weight: 700;
+            padding-top: 80px;
+            margin-bottom: 60px;
+        }
+
+        .left {
+            .box1 {
+                @include left-projectbox();
+                margin: 80px auto 0 auto;
+            }
+
+            .box2 {
+                @include left-projectbox();
+                margin: 50px auto 0 auto;
+            }
+        }
+
+
+        .right {
+            .box1 {
+                @include right-projectbox();
+                margin: 50px auto 0 auto;
+            }
+
+            .box2 {
+                @include right-projectbox();
+                margin: 50px auto 0 auto;
+            }
+        }
+
+        .mid-svg {
+            display: none;
+        }
+    }
+
+    .section5 {
+        display: block;
+        background: #EDEDED;
+        height: 300px;
+        text-align: center;
+
+        h2 {
+            padding: 70px 0 5px 0;
+        }
+
+        .icons {
+            padding: 20px 0;
+
+            a {
+                text-decoration: none;
+                padding-right: 10px;
+            }
+        }
+
+        p {
+            a {
+                font-style: italic;
+                text-decoration: none;
+                color: black;
+            }
+        }
+
+    }
 }
 
-.section4 {
-    @include sections();
-    height: 1800px;
-    text-align: center;
-    color: white;
 
-    p {
-        font-size: 30px;
-        font-weight: 700;
-        padding-top: 80px;
-        margin-bottom: 60px;
+/*Laptop View*/
+@media (min-width: 1150px) {
+    .mobile{
+        display: none;
+    }
+    @mixin sections {
+        width: 100%;
+        height: 580px;
+        background: black;
+        border-bottom: 2px solid red;
     }
 
-    .left {
-        float: left;
-
-        .box1 {
-            @include left-projectbox();
-            margin: 80px 0 0 70px;
-        }
-
-        .box2 {
-            @include left-projectbox();
-            margin: 530px 0 0 70px;
-        }
-    }
-
-    .right {
+    @mixin skew {
+        position: relative;
+        padding: 0em 5em 0em 0em;
+        overflow: hidden;
+        color: red;
+        height: 100%;
         float: right;
+        width: 55%;
 
-        .box1 {
-            @include right-projectbox();
-            margin: 450px 70px 0 0;
-        }
-
-        .box2 {
-            @include right-projectbox();
-            margin: 510px 70px 0 0;
-        }
-    }
-}
-
-.section5 {
-    background: #EDEDED;
-    height: 300px;
-    text-align: center;
-
-    h2 {
-        padding: 70px 0 5px 0;
-    }
-
-    .icons {
-        padding: 20px 0;
-
-        a {
-            text-decoration: none;
-            padding-right: 10px;
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0px;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: white;
+            transform-origin: 100% 0%;
+            transform: skew(18deg);
+            z-index: 0;
         }
     }
 
-    p {
-        a {
-            font-style: italic;
-            text-decoration: none;
-            color: black;
+    @mixin left-projectbox {
+        height: 240px;
+        width: 410px;
+        border-radius: 20px;
+        background: white;
+        color: black;
+        transition: background 0.5s;
+
+        &:hover {
+            background: red;
+            color: white;
+
+            h4 {
+                color: black;
+            }
+        }
+
+        p {
+            font-size: 32px;
+            font-weight: 700;
+            margin: 0 0 5px 0;
+            padding: 15px 0 0 0;
+        }
+
+        h5 {
+            font-size: 15px;
+            margin: 0 15px 15px 15px;
+        }
+
+        h4 {
+            color: red;
+
+            span {
+                margin-right: 5px;
+            }
+
+            svg {
+                vertical-align: middle;
+            }
         }
     }
 
+    @mixin right-projectbox {
+        height: 220px;
+        width: 420px;
+        border-radius: 20px;
+        background: white;
+        color: black;
+        transition: background 0.5s;
+
+        &:hover {
+            background: red;
+            color: white;
+
+            h4 {
+                color: black;
+            }
+        }
+
+        p {
+            font-size: 30px;
+            font-weight: 700;
+            margin: 15px 0 5px 0;
+            padding: 15px 0 0 0;
+        }
+
+        h5 {
+            font-size: 15px;
+            margin: 0 15px 15px 15px;
+        }
+
+        h4 {
+            color: red;
+
+            span {
+                margin-right: 5px;
+            }
+
+            svg {
+                vertical-align: middle;
+            }
+        }
+    }
+
+    .section1 {
+        @include sections();
+
+        .socials {
+            display: block;
+            height: 266px;
+            width: 38px;
+            float: left;
+            border-radius: 15px;
+            margin: 150px 30px 0 70px;
+            border: 1px solid red;
+            text-align: center;
+
+            svg {
+                width: 20px;
+                height: 20px;
+                color: white;
+                margin-top: 16px;
+            }
+        }
+
+        .skew {
+            @include skew();
+
+            div {
+                z-index: 1;
+                position: absolute;
+                margin-left: 240px;
+                margin-top: 15px;
+                color: black;
+
+                a {
+                    text-decoration: none;
+                    font-weight: 600;
+                    margin-right: 15px;
+                    color: black;
+
+                    &:hover {
+                        text-decoration: underline;
+                        text-decoration-color: red;
+                        text-decoration-thickness: 2.3px;
+                    }
+                }
+
+                :nth-child(6) {
+                    margin: 90px 0 0px 0;
+                    font-weight: 600;
+                    letter-spacing: 6px;
+                    font-size: 25px;
+                    color: red;
+                }
+
+                :nth-child(7) {
+                    font-weight: 900;
+                    font-size: 40px;
+                    color: black;
+                }
+
+                :nth-child(8) {
+                    font-weight: 600;
+                    font-size: 15px;
+                }
+
+                :nth-child(9) {
+                    margin: 8px 0 18px 0;
+                    width: 380px;
+                }
+
+                button {
+                    background: black;
+                    padding: 8px;
+                    color: white;
+                    font-size: 16px;
+                    font-weight: 500;
+                    text-align: center;
+                    border: none;
+                    border-radius: 4px;
+                    transition: background 0.3s;
+
+                    &:hover {
+                        color: black;
+                        background: white;
+                        font-weight: 600;
+                        border: 1.2px solid red;
+                    }
+                }
+            }
+        }
+    }
+
+    .section2 {
+        @include sections();
+
+        .about {
+            color: white;
+            margin-right: 8%;
+            width: 380px;
+            float: right;
+
+            :nth-child(1) {
+                font-weight: 600;
+                letter-spacing: 5px;
+                font-size: 25px;
+                color: red;
+                padding-top: 220px;
+            }
+
+            :nth-child(2) {
+                font-size: 22px;
+            }
+        }
+
+        .skew {
+            @include skew();
+            float: left;
+            width: 47%;
+
+            &::after {
+                transform: skew(-18deg);
+            }
+
+            div {
+                z-index: 1;
+                position: absolute;
+                margin-left: 240px;
+                margin-top: 15px;
+                color: black;
+            }
+        }
+    }
+
+    .section3 {
+        @include sections();
+        text-align: center;
+        height: 850px;
+
+        p {
+            font-size: 30px;
+            font-weight: 700;
+            padding-top: 50px;
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        .boxes {
+            width: 1000px;
+            text-align: center;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            row-gap: 20px;
+            column-gap: 40px;
+            margin: auto;
+
+            .skill {
+                height: 305px;
+                width: 300px;
+                background: white;
+                color: black;
+                font-size: 16px;
+                border-radius: 20px;
+                transition: background 0.5s;
+                text-align: left;
+
+                &:hover {
+                    background: #FF0000;
+                    color: black;
+                    cursor: pointer;
+
+                    h4 {
+                        color: white;
+                    }
+
+                    h6 {
+                        color: white;
+                    }
+                }
+
+                svg {
+                    margin: 20px 20px 24px 20px;
+                }
+
+                h4 {
+                    font-weight: 700;
+                    font-size: 22px;
+                    margin: 0 7px 10px 20px;
+                }
+
+                h6 {
+                    font-size: 16px;
+                    font-weight: 400;
+                    margin: 0 15px 0 20px;
+                }
+            }
+        }
+    }
+
+    .section4 {
+        @include sections();
+        height: 1800px;
+        text-align: center;
+        color: white;
+
+        p {
+            font-size: 30px;
+            font-weight: 700;
+            padding-top: 80px;
+            margin-bottom: 60px;
+        }
+
+        .left {
+            float: left;
+
+            .box1 {
+                @include left-projectbox();
+                margin: 80px 0 0 70px;
+            }
+
+            .box2 {
+                @include left-projectbox();
+                margin: 530px 0 0 70px;
+            }
+        }
+
+        .right {
+            float: right;
+
+            .box1 {
+                @include right-projectbox();
+                margin: 450px 70px 0 0;
+            }
+
+            .box2 {
+                @include right-projectbox();
+                margin: 510px 70px 0 0;
+            }
+        }
+        .mid-svg {
+            display: inline-block;
+        }
+    }
+
+    .section5 {
+        display: block;
+        background: #EDEDED;
+        height: 300px;
+        text-align: center;
+
+        h2 {
+            padding: 70px 0 5px 0;
+        }
+
+        .icons {
+            padding: 20px 0;
+
+            a {
+                text-decoration: none;
+                padding-right: 10px;
+            }
+        }
+
+        p {
+            a {
+                font-style: italic;
+                text-decoration: none;
+                color: black;
+            }
+        }
+
+    }
 }
