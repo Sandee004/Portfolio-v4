@@ -72,7 +72,7 @@ body {
     border-bottom: 2px solid red;
     background: whitesmoke;
     color: black;
-    height: 100vh;
+    height: 90vh;
   }
   .mobile .section7 div, .mobile .section7 p {
     margin-left: 25px;
@@ -117,7 +117,7 @@ body {
     color: red;
   }
   .mobile .section8 div {
-    margin-bottom: 15px;
+    margin-bottom: 9vw;
   }
   .mobile .section8 div svg {
     width: 8.2vw;
@@ -233,6 +233,8 @@ body {
   }
   .mobile .section10 .icon a svg {
     margin-right: 10px;
+    width: 8vw;
+    height: 8vw;
   }
   .mobile .section10 p a {
     font-style: italic;

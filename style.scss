@@ -75,7 +75,7 @@ body {
             @include sections();
             background: whitesmoke;
             color: black;
-            height: 100vh;
+            height: 90vh;
             :nth-child(1){
                 span{
                     color: red;
@@ -110,7 +110,7 @@ body {
                 margin-bottom: 8vw;
             }
             div{
-                margin-bottom: 15px;
+                margin-bottom: 9vw;
                 svg{
                     width: 8.2vw;
                     height: 8.2vw;
@@ -216,6 +216,8 @@ body {
                     text-decoration: none;
                     svg{
                         margin-right: 10px;
+                        width: 8vw;
+                        height: 8vw;
                     }
                 }
             }
