@@ -133,7 +133,7 @@ body {
     background: black;
     color: white;
     border-bottom: 2px solid red;
-    height: 100vh;
+    height: contain;
     color: black;
     background: ghostwhite;
   }
@@ -142,14 +142,51 @@ body {
     margin-right: 25px;
   }
   .mobile .section9 :nth-child(1) {
+    text-align: left;
     font-weight: 600;
     letter-spacing: 3px;
     font-size: 30px;
     padding-top: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
   }
   .mobile .section9 :nth-child(1) span {
     color: red;
+  }
+  .mobile .section9 .boxa {
+    height: contain;
+    width: 65%;
+    margin: 0 auto 20px auto;
+    border-radius: 20px;
+    background: white;
+    color: black;
+    border: 1px solid black;
+  }
+  .mobile .section9 .boxa h2 {
+    margin: 0 0 10px 15px;
+    padding: 15px 0 0 0;
+    font-size: 30px;
+    letter-spacing: 0;
+  }
+  .mobile .section9 .boxa p {
+    margin: 5px 15px 10px 15px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .mobile .section9 .boxa .set {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .mobile .section9 .boxa .set span {
+    color: red;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0;
+    margin-right: 10px;
+  }
+  .mobile .section9 .boxa .set .last a svg {
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
   }
   .mobile .section10 {
     display: block;
@@ -170,7 +207,10 @@ body {
   .mobile .section10 .icon {
     margin: 20px 0 20px 0;
   }
-  .mobile .section10 .icon svg {
+  .mobile .section10 .icon a {
+    text-decoration: none;
+  }
+  .mobile .section10 .icon a svg {
     margin-right: 10px;
   }
   .mobile .section10 p a {
