@@ -26,19 +26,94 @@ body {
         .section6{
             @include sections();
             height: 100vh;
-            div{
+            .navbar{
+                width: 100%;
+                height: contain;
+                background: rgb(248, 248, 255, 0.9);
+                margin: 0;
+                padding: 7px 0;
+                border: 2px solid red;
+                box-sizing: border-box;
+                position: fixed;
+
+                .obv{
+                    span {
+                        display: block;
+                        font-size: 7vw;
+                        color: black;
+                        //line-height: 80px;
+                        //vertical-align: middle;
+                        font-weight: 600;
+                        //margin: 0px 25px;
+                        //padding-top: 20px;
+                        .menu-svg{
+                            float: right;
+                            vertical-align: middle;
+                            width: 8vw;
+                            height: 5vw;
+                            color: red;
+                            padding-top: 10px;
+                            //margin: 18px 25px;
+                            //padding-top: 10px;
+                        }
+                    }
+                }
+
+                .overlay{
+                    height: 100%;
+                    width: 0;
+                    position: fixed;
+                    z-index: 1;
+                    right: -25px;
+                    top: 0;
+                    background-color: rgb(248, 248, 255, 0.9);
+                    overflow-x: hidden;
+                    transition: 0.5s;
+                }
+                
+                .overlay-content {
+                    position: relative;
+                    top: 25%;
+                    width: 100%;
+                    text-align: center;
+                    a{
+                        padding: 8px;
+                        font-size: 6.5vw;
+                        background-color: transparent;
+                        color: black;
+                        font-weight: 500;
+                        transition: 0.3s;
+                        display: block;
+                        text-decoration: none;
+                        &:hover{
+                            background: red;
+                            color: white;
+                        }
+                    }
+                    .closebtn{
+                        position: absolute;
+                        top: -60px;
+                        right: 45px;
+                        font-size: 50px;
+                        &:hover, &:focus {
+                            background: transparent;
+                            color: white;
+                        }
+                    }
+                } 
+            }
+
+            .home{
                 margin: 0;
                 :nth-child(1){
                     font-weight: 500;
                     font-size: 4vw;
-                    //font-size: 16px;
                     color: red;
                     padding-top: 80px;
                     margin-bottom: 8px;
                 }
                 :nth-child(2){
                     font-size: 8vw;
-                    //font-size: 32px;
                     font-weight: 650;
                     margin-bottom: 8px;
                 }

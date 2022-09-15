@@ -26,30 +26,95 @@ body {
     margin-left: 25px;
     margin-right: 25px;
   }
-  .mobile .section6 div {
+  .mobile .section6 .navbar {
+    width: 100%;
+    height: contain;
+    background: rgba(248, 248, 255, 0.9);
+    margin: 0;
+    padding: 7px 0;
+    border: 2px solid red;
+    box-sizing: border-box;
+    position: fixed;
+  }
+  .mobile .section6 .navbar .obv span {
+    display: block;
+    font-size: 7vw;
+    color: black;
+    font-weight: 600;
+  }
+  .mobile .section6 .navbar .obv span .menu-svg {
+    float: right;
+    vertical-align: middle;
+    width: 8vw;
+    height: 5vw;
+    color: red;
+    padding-top: 10px;
+  }
+  .mobile .section6 .navbar .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    right: -25px;
+    top: 0;
+    background-color: rgba(248, 248, 255, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  .mobile .section6 .navbar .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+  }
+  .mobile .section6 .navbar .overlay-content a {
+    padding: 8px;
+    font-size: 6.5vw;
+    background-color: transparent;
+    color: black;
+    font-weight: 500;
+    transition: 0.3s;
+    display: block;
+    text-decoration: none;
+  }
+  .mobile .section6 .navbar .overlay-content a:hover {
+    background: red;
+    color: white;
+  }
+  .mobile .section6 .navbar .overlay-content .closebtn {
+    position: absolute;
+    top: -60px;
+    right: 45px;
+    font-size: 50px;
+  }
+  .mobile .section6 .navbar .overlay-content .closebtn:hover, .mobile .section6 .navbar .overlay-content .closebtn:focus {
+    background: transparent;
+    color: white;
+  }
+  .mobile .section6 .home {
     margin: 0;
   }
-  .mobile .section6 div :nth-child(1) {
+  .mobile .section6 .home :nth-child(1) {
     font-weight: 500;
     font-size: 4vw;
     color: red;
     padding-top: 80px;
     margin-bottom: 8px;
   }
-  .mobile .section6 div :nth-child(2) {
+  .mobile .section6 .home :nth-child(2) {
     font-size: 8vw;
     font-weight: 650;
     margin-bottom: 8px;
   }
-  .mobile .section6 div :nth-child(3) {
+  .mobile .section6 .home :nth-child(3) {
     font-weight: 500;
     font-size: 6vw;
     margin-bottom: 8px;
   }
-  .mobile .section6 div :nth-child(4) {
+  .mobile .section6 .home :nth-child(4) {
     font-size: 5vw;
   }
-  .mobile .section6 div .resume {
+  .mobile .section6 .home .resume {
     text-decoration: none;
     color: white;
     font-weight: 500;
@@ -60,7 +125,7 @@ body {
     font-weight: 18px;
     margin: 0 25px;
   }
-  .mobile .section6 div .resume:hover {
+  .mobile .section6 .home .resume:hover {
     background: red;
     color: white;
   }
