@@ -20,7 +20,8 @@ body {
     background: black;
     color: white;
     border-bottom: 2px solid red;
-    height: 100vh;
+    height: contain;
+    padding-bottom: 350px;
   }
   .mobile .section6 div, .mobile .section6 p {
     margin-left: 25px;
@@ -29,7 +30,7 @@ body {
   .mobile .section6 .navbar {
     width: 100%;
     height: contain;
-    background: rgba(248, 248, 255, 0.9);
+    background: rgba(0, 0, 0, 0.8);
     margin: 0;
     padding: 7px 0;
     border: 2px solid red;
@@ -39,7 +40,7 @@ body {
   .mobile .section6 .navbar .obv span {
     display: block;
     font-size: 7vw;
-    color: black;
+    color: white;
     font-weight: 600;
   }
   .mobile .section6 .navbar .obv span .menu-svg {
@@ -98,7 +99,7 @@ body {
     font-weight: 500;
     font-size: 4vw;
     color: red;
-    padding-top: 80px;
+    padding-top: 180px;
     margin-bottom: 8px;
   }
   .mobile .section6 .home :nth-child(2) {
@@ -137,7 +138,7 @@ body {
     border-bottom: 2px solid red;
     background: whitesmoke;
     color: black;
-    height: 90vh;
+    height: 120vh;
   }
   .mobile .section7 div, .mobile .section7 p {
     margin-left: 25px;
@@ -159,17 +160,31 @@ body {
   .mobile .section7 :nth-child(4) {
     margin-top: 10px;
   }
+  .mobile .section7::before {
+    display: block;
+    content: " ";
+    height: 50px;
+    margin-top: -150px;
+    visibility: hidden;
+  }
   .mobile .section8 {
     display: block;
     width: 100%;
     background: black;
     color: white;
     border-bottom: 2px solid red;
-    height: cover;
+    height: contain;
   }
   .mobile .section8 div, .mobile .section8 p {
     margin-left: 25px;
     margin-right: 25px;
+  }
+  .mobile .section8::before {
+    display: block;
+    content: " ";
+    height: 50px;
+    margin-top: -150px;
+    visibility: hidden;
   }
   .mobile .section8 :nth-child(1) {
     font-weight: 600;
@@ -199,6 +214,9 @@ body {
     font-size: 5vw;
     font-weight: 600;
   }
+  .mobile .section8 :nth-child(7) {
+    padding-bottom: 140px;
+  }
   .mobile .section9 {
     display: block;
     width: 100%;
@@ -212,6 +230,13 @@ body {
   .mobile .section9 div, .mobile .section9 p {
     margin-left: 25px;
     margin-right: 25px;
+  }
+  .mobile .section9::before {
+    display: block;
+    content: " ";
+    height: 50px;
+    margin-top: -150px;
+    visibility: hidden;
   }
   .mobile .section9 :nth-child(1) {
     text-align: left;
