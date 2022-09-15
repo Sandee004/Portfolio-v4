@@ -33,7 +33,7 @@ body {
     background: rgba(0, 0, 0, 0.8);
     margin: 0;
     padding: 7px 0;
-    border: 2px solid red;
+    border: 1px solid red;
     box-sizing: border-box;
     position: fixed;
   }
