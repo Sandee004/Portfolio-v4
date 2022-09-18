@@ -795,6 +795,7 @@ body {
     font-weight: 600;
     margin-right: 15px;
     color: black;
+    scroll-behavior: smooth;
   }
   .section1 .skew div a:hover {
     text-decoration: underline;
