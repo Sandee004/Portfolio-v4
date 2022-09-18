@@ -101,7 +101,7 @@ body {
                         position: absolute;
                         top: -60px;
                         right: 45px;
-                        font-size: 50px;
+                        font-size: 9.9vw;
                         &:hover, &:focus {
                             background: transparent;
                             color: white;
@@ -157,7 +157,7 @@ body {
             @include sections();
             background: whitesmoke;
             color: black;
-            height: 290vw;
+            height: 300vw;
             :nth-child(1){
                 span{
                     color: red;
@@ -176,7 +176,7 @@ body {
             }
             img{
             //:nth-child(4) {
-                margin: 20px auto auto auto;
+                margin: 2vw auto 3vw auto;
                 display: block;
                 width: 70vw;
                 height: 56vw;

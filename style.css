@@ -92,7 +92,7 @@ body {
     position: absolute;
     top: -60px;
     right: 45px;
-    font-size: 50px;
+    font-size: 9.9vw;
   }
   .mobile .section6 .navbar .overlay-content .closebtn:hover, .mobile .section6 .navbar .overlay-content .closebtn:focus {
     background: transparent;
@@ -144,7 +144,7 @@ body {
     border-bottom: 2px solid red;
     background: whitesmoke;
     color: black;
-    height: 290vw;
+    height: 300vw;
   }
   .mobile .section7 div, .mobile .section7 p {
     margin-left: 25px;
@@ -165,7 +165,7 @@ body {
     text-indent: 25px;
   }
   .mobile .section7 img {
-    margin: 20px auto auto auto;
+    margin: 2vw auto 3vw auto;
     display: block;
     width: 70vw;
     height: 56vw;
