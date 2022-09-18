@@ -157,7 +157,7 @@ body {
             @include sections();
             background: whitesmoke;
             color: black;
-            height: 300vw;
+            height: 290vw;
             :nth-child(1){
                 span{
                     color: red;
@@ -169,7 +169,7 @@ body {
                 padding-top: 30px;
                 margin-bottom: 13px;
             }
-            :nth-child(2), :nth-child(3) {
+            :nth-child(2), :nth-child(4) {
                 font-size: 4.6vw;
                 text-indent: 25px;
                 //line-height: 5.5vw;

@@ -144,7 +144,7 @@ body {
     border-bottom: 2px solid red;
     background: whitesmoke;
     color: black;
-    height: 300vw;
+    height: 290vw;
   }
   .mobile .section7 div, .mobile .section7 p {
     margin-left: 25px;
@@ -160,7 +160,7 @@ body {
   .mobile .section7 :nth-child(1) span {
     color: red;
   }
-  .mobile .section7 :nth-child(2), .mobile .section7 :nth-child(3) {
+  .mobile .section7 :nth-child(2), .mobile .section7 :nth-child(4) {
     font-size: 4.6vw;
     text-indent: 25px;
   }
