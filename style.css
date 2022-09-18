@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
 }
@@ -33,7 +37,7 @@ body {
     background: rgba(0, 0, 0, 0.8);
     margin: 0;
     padding: 7px 0;
-    border: 1px solid red;
+    border: 2px solid red;
     box-sizing: border-box;
     position: fixed;
   }
@@ -56,17 +60,19 @@ body {
     width: 0;
     position: fixed;
     z-index: 1;
-    right: -25px;
+    right: -30px;
     top: 0;
     background-color: rgba(248, 248, 255, 0.9);
     overflow-x: hidden;
     transition: 0.5s;
+    text-align: center;
   }
   .mobile .section6 .navbar .overlay-content {
     position: relative;
     top: 25%;
     width: 100%;
     text-align: center;
+    right: 30px;
   }
   .mobile .section6 .navbar .overlay-content a {
     padding: 8px;
@@ -138,7 +144,7 @@ body {
     border-bottom: 2px solid red;
     background: whitesmoke;
     color: black;
-    height: 120vh;
+    height: 270vw;
   }
   .mobile .section7 div, .mobile .section7 p {
     margin-left: 25px;
@@ -156,9 +162,13 @@ body {
   }
   .mobile .section7 :nth-child(2), .mobile .section7 :nth-child(3) {
     font-size: 4.6vw;
+    text-indent: 25px;
   }
-  .mobile .section7 :nth-child(4) {
-    margin-top: 10px;
+  .mobile .section7 img {
+    margin: 20px auto auto auto;
+    display: block;
+    width: 70vw;
+    height: 56vw;
   }
   .mobile .section7::before {
     display: block;
@@ -490,9 +500,13 @@ body {
   .section2 .skew div {
     z-index: 1;
     position: absolute;
-    margin-left: 240px;
-    margin-top: 15px;
+    margin-left: 50px;
+    margin-top: 100px;
     color: black;
+  }
+  .section2 .skew div img {
+    width: 400px;
+    height: 370px;
   }
   .section3 {
     display: block;
@@ -857,7 +871,7 @@ body {
     letter-spacing: 5px;
     font-size: 25px;
     color: red;
-    padding-top: 220px;
+    padding-top: 170px;
   }
   .section2 .about :nth-child(2) {
     font-size: 22px;
@@ -891,9 +905,13 @@ body {
   .section2 .skew div {
     z-index: 1;
     position: absolute;
-    margin-left: 240px;
-    margin-top: 15px;
+    margin-left: 50px;
+    margin-top: 100px;
     color: black;
+  }
+  .section2 .skew div img {
+    width: 410px;
+    height: 380px;
   }
   .section3 {
     width: 100%;
