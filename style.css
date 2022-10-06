@@ -40,6 +40,7 @@ body {
     border: 2px solid grey;
     box-sizing: border-box;
     position: fixed;
+    z-index: 2;
   }
   .mobile .section6 .navbar .obv span {
     display: block;
@@ -267,6 +268,8 @@ body {
     background: white;
     color: black;
     border: 1px solid black;
+    transform: translateX(400%);
+    transition: transform 0.6s ease;
   }
   .mobile .section9 .boxa h2 {
     margin: 0 0 10px 15px;
@@ -302,6 +305,12 @@ body {
   }
   .mobile .section9 .boxa:hover .set span {
     color: white;
+  }
+  .mobile .section9 .boxa:nth-of-type(even) {
+    transform: translateX(-400%);
+  }
+  .mobile .section9 .boxa.show {
+    transform: translateX(0);
   }
   .mobile .section10 {
     display: block;

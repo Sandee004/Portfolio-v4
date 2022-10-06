@@ -30,3 +30,24 @@
                 menuE.addEventListener("click", function() {
                     closeNav()
                 });
+
+
+const boxes = document.querySelectorAll('.boxa')
+
+window.addEventListener('scroll', checkBoxes)
+
+checkBoxes()
+
+function checkBoxes() {
+    const triggerBottom = window.innerHeight / 5 * 4
+
+    boxes.forEach(boxa => {
+        const boxTop = boxa.getBoundingClientRect().top
+
+        if(boxTop < triggerBottom) {
+            boxa.classList.add('show')
+        } else {
+            boxa.classList.remove('show')
+        }
+    })
+}
