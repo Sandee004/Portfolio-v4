@@ -36,7 +36,7 @@ body {
                 background: rgb(0, 0, 0, 0.8);
                 margin: 0;
                 padding: 7px 0;
-                border: 2px solid red;
+                border: 2px solid grey;
                 box-sizing: border-box;
                 position: fixed;
 
@@ -213,6 +213,7 @@ body {
             }
             div{
                 margin-bottom: 9vw;
+                //text-align: center;
                 svg{
                     width: 8.2vw;
                     height: 8.2vw;
