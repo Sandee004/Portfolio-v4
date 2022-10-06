@@ -8,6 +8,8 @@ html{
 body {
     background: skyblue;
     font-family: 'Poppins', sans-serif;
+    //overflow-x: hidden;
+    
 }
 @media (min-width: 100px) {
     .section1, .section2, .section3, .section4, .section5{
@@ -18,7 +20,7 @@ body {
         width: 100%;
         background: black;
         color: white;
-        border-bottom: 2px solid red;
+        border-bottom: 2px solid grey;
         div, p{
             margin-left: 25px;
             margin-right: 25px;
@@ -31,7 +33,7 @@ body {
             height: contain;
             padding-bottom: 350px;
             .navbar{
-                width: 100%;
+                width: 100vw;
                 height: contain;
                 background: rgb(0, 0, 0, 0.8);
                 margin: 0;
@@ -39,7 +41,7 @@ body {
                 border: 2px solid grey;
                 box-sizing: border-box;
                 position: fixed;
-                z-index: 2;
+                z-index: 1;
 
                 .obv{
                     span {
@@ -267,8 +269,8 @@ body {
                 background: white;
                 color: black;
                 border: 1px solid black;
-                transform: translateX(400%);
-                transition: transform 0.6s ease;
+                //transform: translateX(400%);
+                //transition: transform 0.4s ease;
                 h2{
                     margin: 0 0 10px 15px;
                     padding: 15px 0 0 0;
@@ -310,15 +312,13 @@ body {
                         }
                     }
                 }
-
-                &:nth-of-type(even) {
+                /*&:nth-of-type(even) {
                     transform: translateX(-400%);
-                }
+                }*/
             }
-
-                .boxa.show {
-                    transform: translateX(0);
-                }
+            /*.boxa.show {
+                transform: translateX(0);
+            }*/
         }
 
         .section10{

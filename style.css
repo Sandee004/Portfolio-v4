@@ -23,7 +23,7 @@ body {
     width: 100%;
     background: black;
     color: white;
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid grey;
     height: contain;
     padding-bottom: 350px;
   }
@@ -32,7 +32,7 @@ body {
     margin-right: 25px;
   }
   .mobile .section6 .navbar {
-    width: 100%;
+    width: 100vw;
     height: contain;
     background: rgba(0, 0, 0, 0.8);
     margin: 0;
@@ -40,7 +40,7 @@ body {
     border: 2px solid grey;
     box-sizing: border-box;
     position: fixed;
-    z-index: 2;
+    z-index: 1;
   }
   .mobile .section6 .navbar .obv span {
     display: block;
@@ -142,7 +142,7 @@ body {
     width: 100%;
     background: black;
     color: white;
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid grey;
     background: whitesmoke;
     color: black;
     height: 300vw;
@@ -183,7 +183,7 @@ body {
     width: 100%;
     background: black;
     color: white;
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid grey;
     height: contain;
   }
   .mobile .section8 div, .mobile .section8 p {
@@ -233,10 +233,13 @@ body {
     width: 100%;
     background: black;
     color: white;
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid grey;
     height: contain;
     color: black;
     background: ghostwhite;
+    /*.boxa.show {
+        transform: translateX(0);
+    }*/
   }
   .mobile .section9 div, .mobile .section9 p {
     margin-left: 25px;
@@ -268,8 +271,9 @@ body {
     background: white;
     color: black;
     border: 1px solid black;
-    transform: translateX(400%);
-    transition: transform 0.6s ease;
+    /*&:nth-of-type(even) {
+        transform: translateX(-400%);
+    }*/
   }
   .mobile .section9 .boxa h2 {
     margin: 0 0 10px 15px;
@@ -306,18 +310,12 @@ body {
   .mobile .section9 .boxa:hover .set span {
     color: white;
   }
-  .mobile .section9 .boxa:nth-of-type(even) {
-    transform: translateX(-400%);
-  }
-  .mobile .section9 .boxa.show {
-    transform: translateX(0);
-  }
   .mobile .section10 {
     display: block;
     width: 100%;
     background: black;
     color: white;
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid grey;
     height: contain;
     text-align: center;
   }

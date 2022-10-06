@@ -31,7 +31,7 @@
                     closeNav()
                 });
 
-
+/*
 const boxes = document.querySelectorAll('.boxa')
 
 window.addEventListener('scroll', checkBoxes)
@@ -39,7 +39,7 @@ window.addEventListener('scroll', checkBoxes)
 checkBoxes()
 
 function checkBoxes() {
-    const triggerBottom = window.innerHeight / 5 * 4
+    const triggerBottom = window.innerHeight / 3 * 4
 
     boxes.forEach(boxa => {
         const boxTop = boxa.getBoundingClientRect().top
@@ -50,4 +50,4 @@ function checkBoxes() {
             boxa.classList.remove('show')
         }
     })
-}
+}*/
