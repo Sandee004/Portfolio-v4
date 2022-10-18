@@ -89,14 +89,14 @@ body {
     position: fixed;
     left: -350px;
     top: 0;
-    background: rgb(248, 248, 255);
+    background: whitesmoke;
     height: 100vh;
     transition: 0.5s;
     text-align: center;
   }
   .mobile .section6 .navbar #sidebar ul {
     position: relative;
-    margin-top: 100px;
+    margin-top: 120px;
   }
   .mobile .section6 .navbar #sidebar ul li {
     list-style: none;
@@ -109,7 +109,7 @@ body {
   }
   .mobile .section6 .navbar #sidebar ul a {
     padding: 8px;
-    font-size: 24px;
+    font-size: 22px;
     background-color: transparent;
     color: black;
     font-weight: 500;
