@@ -2,6 +2,13 @@
 const toggle = document.getElementById('toggle')
 const sidebar = document.getElementById('sidebar')
 
+document.body.onscroll = function(e) {
+    if (e.target.id !== 'sidebar' && e.target.id !== 'toggle') {
+        toggle.classList.remove('active')
+        sidebar.classList.remove('active')
+    }
+}
+
 document.body.onclick = function(e) {
     if (e.target.id !== 'sidebar' && e.target.id !== 'toggle') {
         toggle.classList.remove('active')
