@@ -95,7 +95,7 @@ body {
                     position: fixed;
                     left: -350px;
                     top: 0;
-                    background: whitesmoke;
+                    background: ghostwhite;
                     height: 100vh;
                     transition: 0.5s;
                     text-align: center;
@@ -174,7 +174,7 @@ body {
 
         .section7{
             @include sections();
-            background: whitesmoke;
+            background: ghostwhite;
             color: black;
             height: 300vw;
             :nth-child(1){
@@ -285,14 +285,14 @@ body {
                 background: white;
                 color: black;
                 border: 1px solid black;
-                //transform: translateX(400%);
-                //transition: transform 0.4s ease;
+
                 h2{
                     margin: 0 0 10px 15px;
                     padding: 15px 0 0 0;
                     font-size: 5vw;
                     letter-spacing: 0;
                 }
+
                 p{
                     margin: 5px 15px 10px 15px;
                     font-size: 4.6vw;
@@ -320,6 +320,7 @@ body {
                         }
                     }
                 }
+
                 &:hover{
                     background: red;
                     .set{
@@ -328,13 +329,7 @@ body {
                         }
                     }
                 }
-                /*&:nth-of-type(even) {
-                    transform: translateX(-400%);
-                }*/
             }
-            /*.boxa.show {
-                transform: translateX(0);
-            }*/
         }
 
         .section10{

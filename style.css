@@ -89,7 +89,7 @@ body {
     position: fixed;
     left: -350px;
     top: 0;
-    background: whitesmoke;
+    background: ghostwhite;
     height: 100vh;
     transition: 0.5s;
     text-align: center;
@@ -163,7 +163,7 @@ body {
     background: black;
     color: white;
     border-bottom: 2px solid grey;
-    background: whitesmoke;
+    background: ghostwhite;
     color: black;
     height: 300vw;
   }
@@ -257,9 +257,6 @@ body {
     height: contain;
     color: black;
     background: ghostwhite;
-    /*.boxa.show {
-        transform: translateX(0);
-    }*/
   }
   .mobile .section9 div, .mobile .section9 p {
     margin-left: 25px;
@@ -291,9 +288,6 @@ body {
     background: white;
     color: black;
     border: 1px solid black;
-    /*&:nth-of-type(even) {
-        transform: translateX(-400%);
-    }*/
   }
   .mobile .section9 .boxa h2 {
     margin: 0 0 10px 15px;
