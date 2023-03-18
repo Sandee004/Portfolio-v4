@@ -90,9 +90,9 @@ body {
     width: 200px;
     position: fixed;
     left: -350px;
-    top: 55px;
+    top: 60px;
     background: ghostwhite;
-    height: 45vh;
+    height: 240px;
     transition: 0.5s;
     text-align: left;
     border: 2px solid grey;
@@ -105,7 +105,7 @@ body {
     background: red;
  }
 .mobile .section6 #sidebar a {
-    font-size: 22px;
+    font-size: 20px;
     background-color: transparent;
     color: black;
     font-weight: 500;
