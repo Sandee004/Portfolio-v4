@@ -31,36 +31,36 @@ body {
     margin-left: 25px;
     margin-right: 25px;
   }
-  .mobile .section6 .navbar {
-    height: contain;
-    background: rgba(0, 0, 0, 0.7);
-    width: 100vw;
-    padding: 8px 0px;
-    z-index: 1;
-    position: fixed;
-    margin: 0;
-    border: 2.5px solid grey;
-  }
-  .mobile .section6 .navbar h2 {
-    color: red;
-    font-family: "Dancing Script", cursive;
-    font-size: 9.5vw;
+
+   .mobile .section6 .navbar h2{
+       font-family: "Dancing Script", cursive;
+       color: red;
+       margin-right: auto;
+       font-size: 9.5vw;
     font-weight: 700;
-    margin: 0 0 0 25px;
-  }
-  .mobile .section6 .navbar #toggle {
-    position: fixed;
-    top: 12px;
-    right: 2px;
-    cursor: pointer;
-    justify-content: center;
+   }
+  .mobile .section6 .navbar{
+    background: rgb(0,0,0,0.7);
+    color: white;
+    width: 100vw;
+    padding: 0.5em 1em;
     display: flex;
     align-items: center;
+    position: fixed;
+    margin: 0;
+    top: 0;
+    border-top: 2.5px solid grey;
+    border-bottom: 2.5px solid grey;
+}
+.mobile .section6 #toggle {
     background: black;
     width: 10vw;
     height: 10vw;
-  }
-  .mobile .section6 .navbar #toggle::before {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mobile .section6 #toggle::before {
     content: "";
     position: absolute;
     width: 6vw;
@@ -68,8 +68,9 @@ body {
     background: white;
     transform: translateY(-5px);
     transition: 0.3s;
-  }
-  .mobile .section6 .navbar #toggle::after {
+    margin-right: auto;
+}
+.mobile .section6 #toggle::after {
     content: "";
     position: absolute;
     width: 6vw;
@@ -77,48 +78,48 @@ body {
     background: white;
     transform: translateY(5px);
     transition: 0.3s;
-  }
-  .mobile .section6 .navbar #toggle.active::before {
+    margin-right: auto;
+}
+.mobile .section6 #toggle.active::before {
     transform: translateY(0px) rotate(45deg);
-  }
-  .mobile .section6 .navbar #toggle.active::after {
+}
+.mobile .section6 #toggle.active::after {
     transform: translateY(0px) rotate(-45deg);
-  }
-  .mobile .section6 .navbar #sidebar {
-    width: 300px;
+}
+.mobile .section6 .navbar #sidebar {
+    width: 200px;
     position: fixed;
     left: -350px;
-    top: 0;
+    top: 55px;
     background: ghostwhite;
-    height: 100vh;
+    height: 45vh;
     transition: 0.5s;
-    text-align: center;
+    text-align: left;
+    border: 2px solid grey;
+    border-radius: 5px;
   }
-  .mobile .section6 .navbar #sidebar ul {
-    position: relative;
-    margin-top: 120px;
-  }
-  .mobile .section6 .navbar #sidebar ul li {
-    list-style: none;
-    display: inline-block;
-    width: 100%;
-    padding: 10px 0;
-  }
-  .mobile .section6 .navbar #sidebar ul li:hover {
+.mobile .section6 .navbar #sidebar ul{
+    margin: 15px auto auto -40px;
+}
+.navbar #sidebar ul a:hover {
     background: red;
-  }
-  .mobile .section6 .navbar #sidebar ul a {
-    padding: 8px;
+ }
+.mobile .section6 #sidebar a {
     font-size: 22px;
     background-color: transparent;
     color: black;
     font-weight: 500;
     transition: 0.3s;
+    display: block;
+    padding: 05px 0 10px 0px;
     text-decoration: none;
+    text-align: center;
+
   }
-  .mobile .section6 .navbar #sidebar.active {
-    left: -90px;
-  }
+.mobile .section6 #sidebar.active {
+    left: -9px;
+}
+    
   .mobile .section6 .home {
     margin: 0;
   }
