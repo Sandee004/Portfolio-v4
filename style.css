@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Dancing+Script&family=Poppins&display=swap');
 html {
   scroll-behavior: smooth;
 }
@@ -98,10 +99,10 @@ body {
     border: 2px solid grey;
     border-radius: 5px;
   }
-.mobile .section6 .navbar #sidebar ul{
-    margin: 15px auto auto -40px;
+.mobile .section6 .navbar #sidebar .ul{
+    margin: 15px auto auto 0px;
 }
-.navbar #sidebar ul a:hover {
+.navbar #sidebar .ul a:hover {
     background: red;
  }
 .mobile .section6 #sidebar a {
@@ -771,6 +772,7 @@ body {
     color: black;
   }
 }
+
 /*Laptop View*/
 @media (min-width: 1150px) {
   .mobile {
