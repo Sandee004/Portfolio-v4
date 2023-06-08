@@ -253,7 +253,6 @@ body {
     display: block;
     width: 100%;
     background: black;
-    color: white;
     border-bottom: 2px solid grey;
     height: contain;
     color: black;
@@ -353,7 +352,7 @@ body {
   .mobile .section10 .icon a {
     text-decoration: none;
   }
-  .mobile .section10 .icon a svg {
+  .mobile .section10 .icon a img {
     margin-right: 10px;
     width: 8vw;
     height: 8vw;
@@ -794,11 +793,11 @@ body {
     border: 1px solid red;
     text-align: center;
   }
-  .section1 .socials svg {
+.section1 .socials img {
     width: 20px;
     height: 20px;
     color: white;
-    margin-top: 16px;
+    margin-top: 23px;
   }
   .section1 .skew {
     position: relative;
@@ -836,10 +835,7 @@ body {
     scroll-behavior: smooth;
   }
   .section1 .skew div a:hover {
-    text-decoration: underline;
-    -webkit-text-decoration-color: red;
-            text-decoration-color: red;
-    text-decoration-thickness: 2.3px;
+    text-decoration: underline 2.3px red;
   }
   .section1 .skew div :nth-child(6) {
     margin: 90px 0 0px 0;
@@ -906,10 +902,6 @@ body {
     overflow: hidden;
     color: red;
     height: 100%;
-    float: right;
-    width: 55%;
-    float: left;
-    width: 47%;
   }
   .section2 .skew::after {
     content: "";
@@ -939,7 +931,6 @@ body {
   }
   .section3 {
     width: 100%;
-    height: 580px;
     background: black;
     border-bottom: 2px solid red;
     text-align: center;
@@ -958,8 +949,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     row-gap: 20px;
-    -moz-column-gap: 40px;
-         column-gap: 40px;
+    column-gap: 40px;
     margin: auto;
   }
   .section3 .boxes .skill {
@@ -977,10 +967,7 @@ body {
     color: black;
     cursor: pointer;
   }
-  .section3 .boxes .skill:hover h4 {
-    color: white;
-  }
-  .section3 .boxes .skill:hover h6 {
+  .section3 .boxes .skill:hover h4, .section3 .boxes .skill:hover h6 {
     color: white;
   }
   .section3 .boxes .skill svg {
@@ -998,7 +985,6 @@ body {
   }
   .section4 {
     width: 100%;
-    height: 580px;
     background: black;
     border-bottom: 2px solid red;
     height: 1800px;
@@ -1023,7 +1009,7 @@ body {
     transition: background 0.5s;
     margin: 80px 0 0 70px;
   }
-  .section4 .left .box1:hover {
+  .section4 .left .box1:hover,  .section4 .left .box2:hover {
     background: red;
     color: white;
   }
@@ -1040,7 +1026,7 @@ body {
     font-size: 15px;
     margin: 0 15px 15px 15px;
   }
-  .section4 .left .box1 h4 {
+  .section4 .left .box1 h4,  .section4 .left .box2 h4 {
     color: red;
   }
   .section4 .left .box1 h4 span {
@@ -1058,10 +1044,6 @@ body {
     transition: background 0.5s;
     margin: 530px 0 0 70px;
   }
-  .section4 .left .box2:hover {
-    background: red;
-    color: white;
-  }
   .section4 .left .box2:hover h4 {
     color: black;
   }
@@ -1074,9 +1056,6 @@ body {
   .section4 .left .box2 h5 {
     font-size: 15px;
     margin: 0 15px 15px 15px;
-  }
-  .section4 .left .box2 h4 {
-    color: red;
   }
   .section4 .left .box2 h4 span {
     margin-right: 5px;
