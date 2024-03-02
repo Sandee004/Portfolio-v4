@@ -1,4 +1,5 @@
 hidden=[".config"]
+modules = ["web:v2-20230623-0b7a606"]
 
 # hosting is currently hardcoded for this language
 # [hosting]
@@ -177,3 +178,7 @@ start = "vscode-css-language-server --stdio"
 
 [gitHubImport]
 requiredFiles = [".replit", "replit.nix", ".config"]
+
+[deployment]
+publicDir = "/"
+deploymentTarget = "static"

@@ -184,7 +184,7 @@ body {
   }
   .mobile .section7 :nth-child(2) {
     font-size: 4.6vw;
-    text-indent: 20px;
+    /*text-indent: 20px;*/;
   }
   .mobile .section7 img {
     display: block;
